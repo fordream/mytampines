@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" client="administrator" method="upgrade" version="1.5.0" position="icon">
+  <name>HUB2 QuickIcons (admin)</name>
+  <author>Hyperlocalizer</author>
+  <creationDate>October 28th, 2011</creationDate>
+  <copyright>Copyright (c) 2006 - 2011 Hyperlocalizer All rights reserved.</copyright>
+  <authorEmail>anurag.gupta@hyperlocalizer.com</authorEmail>
+  <authorUrl>www.hyperlocalizer.com</authorUrl>
+  <version>0.0.1</version>
+  <description>HUB2 quick icon</description>
+  <files>
+    <filename module="mod_hub2_quickicons">mod_hub2_quickicons.php</filename>
+    <filename>index.html</filename>
+    <folder>tmpl</folder>
+  </files>
+  <params>
+  </params>
+</install>

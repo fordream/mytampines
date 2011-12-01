@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install version="1.5.0" type="module" client="administrator" method="upgrade">
+	<name>General button on Control Panel</name>
+	<author>Bernard Gilly</author>
+	<authorEmail>contact@alphaplug.com</authorEmail>
+	<authorUrl>http://www.alphaplug.com</authorUrl>
+	<creationDate>2010 February 10</creationDate>
+	<copyright>Copyright (c)2008-2010 Bernard Gilly</copyright>
+	<license>GNU/GPL</license>
+	<version>1.5.5</version>
+	<description><![CDATA[
+	<h1>AlphaUserPoints Icon Module</h1>
+	<p>This is a module to display an AlphaUserPoints icon on your administrator
+	backend's Control Panel page. The icon displays a warning if there are pending approval points.</p>
+	]]></description>
+	<files>
+		<filename module="mod_aupadmin">mod_aupadmin.php</filename>
+	</files>
+	<params>
+	</params>
+</install>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" position="cpanel" order="0" client="administrator">
+	<name>DJClassifieds Latests Ads</name>
+	<author>design-joomla.eu</author>
+	<creationDate>March 2010</creationDate>
+	<copyright>Copyright (C) 2010 Blue Constant Media LTD, All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>contact@design-jooma.eu</authorEmail>
+	<authorUrl>http://design-joomla.eu</authorUrl>
+	<version>1.1</version>
+	<description>DJ Classifieds Latests Ads for Administrator</description>
+	<files>
+		<filename module="mod_djcflatests">mod_djcflatests.php</filename>
+	</files>
+	<params>
+		<param name="djcflatests_limit" type="text" default="10" label="Ads Limit" />
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+	</params>
+	<check>
+	 	<extension name="mod_djcflatests"  type="modules" field="published" value="1">module='mod_djcflatests'</extension>
+	</check>
+</install>
+
