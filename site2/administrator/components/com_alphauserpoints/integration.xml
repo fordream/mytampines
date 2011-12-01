@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <params>
+    <param name="showUddeimTab" type="radio" default="0" label="AUP_UDDEIM_PROFILE" description="AUP_UDDEIM_PROFILE_DESC">
+    	<option value="0">AUP_NO</option>
+    	<option value="1">AUP_YES</option>
+    </param>
+    <param name="sendMsgUddeim" type="radio" default="0" label="AUP_UDDEIM_SEND_NOTIFICATION" description="AUP_UDDEIM_SEND_NOTIFICATION_DESC">
+    	<option value="0">AUP_NO</option>
+    	<option value="1">AUP_YES</option>
+    </param>
+  	<!--<param name="fromIdUddeim" type="text" size="20" default="" label="AUP_UDDEIM_FROM_ID" description="AUP_UDDEIM_FROM_ID_DESC"/>-->
+    <param name="fromIdUddeim" type="sql" size="20" default="" label="AUP_UDDEIM_FROM_ID" description="AUP_UDDEIM_FROM_ID_DESC" query="SELECT u.id, u.username FROM #__users as u, #__core_acl_aro_groups as g WHERE u.block='0' AND (g.name='manager' OR  g.name='administrator' OR g.name='super administrator' ) AND u.gid=g.id ORDER BY u.username ASC" key_field="id" value_field="username" /> 
+  	<param name="@spacer" type="spacer" label="" />
+  	<param name="linkToProfile" type="list" default="" label="AUP_LINK_TO_PROFILE" description="AUP_LINK_TO_PROFILE_DESC">
+  	  <option value="ku">Kunena</option>
+			<option value="cb">Community Builder</option>
+			<option value="cbe">CBE</option>
+      <option value="ju">Joomunity</option>
+      <option value="js">JomSocial</option>
+      <option value="">AUP_NO</option>
+  	</param>
+  </params>
+</config>

@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>Hub2 Authors</name>
+  <author>Anurag Gupta</author>
+  <version>1.0.0</version>
+  <description>Definition for HUB2 authors</description>
+  <copyright>2010, HYPERLOCALIZER</copyright>
+  <reference>
+  	<table name="hub2_authors">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="fullname" translate="1" >Full Name</field>
+        <field type="text" name="alias" translate="1" posthandler="filterTitle">Alias</field>
+  		<field type="text" name="body" translate="1">Body</field>
+        <field type="text" name="position" translate="1" >Position</field>
+  		<field type="checked_out_by" name="checked_out" translate="0">Check out by</field>
+  		<field type="checked_out_date" name="checked_out_time" translate="0">Check out date</field>
+  	</table>
+  </reference>
+</joomfish>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <params>
+  	<param name="displayMSGfront" type="radio" default="1" label="AUP_DISPLAY_MESSAGE_ON_FRONTEND" description="AUP_DISPLAY_MESSAGE_ON_FRONTEND_DESCRIPTION">
+  		<option value="0">AUP_NO</option>
+  		<option value="1">AUP_YES</option>
+  	</param>
+  	<param name="allowGuestUserViewProfil" type="list" default="0" label="AUP_GUEST_USER" description="AUP_GUEST_USER">
+  		<option value="0">AUP_NOT_ALLOWS_GUEST_USERS_TO_VIEW_PROFILES</option>
+  		<option value="1">AUP_ALLOWS_GUEST_USERS_TO_VIEW_PROFILES</option>
+  	</param>  	
+  	<param name="@spacer" type="spacer" label="" />
+  	<param name="prefix_selfregister" type="text" size="20" default="AUPRS-" label="AUP_PREFIX_SELF_REGISTERED" description="AUP_PREFIX_SELF_REGISTERED"/>
+  	<param name="prefix_referralregister" type="text" size="20" default="AUPRR-" label="AUP_PREFIX_REGISTERED_BY_REFERRAL" description="AUP_PREFIX_REGISTERED_BY_REFERRAL"/>
+  	<param name="referralIDtype" type="radio" default="0" label="AUP_REFERRAL_ID" description="AUP_CHOOSE_TYPE_REFERRAL_ID">
+  		<option value="0">AUP_RANDOMIZE</option>
+  		<option value="1">AUP_USERNAME</option>
+  	</param>
+  	<param name="limit_daily_points" type="text" size="20" default="" label="AUP_LIMIT_DAILY_POINTS" description="AUP_LIMIT_DAILY_POINTS_DESCRIPTION"/>
+  	<param name="insertAllActivities" type="radio" default="0" label="AUP_INSERT_ALL_ACTIVITIES" description="AUP_INSERT_ALL_ACTIVITIES_DESCRIPTION">
+  		<option value="0">AUP_NO</option>
+  		<option value="1">AUP_YES</option>
+  	</param>
+  	<param name="useAvatarFrom" type="list" default="0" label="AUP_USE_AVATAR_FROM" description="AUP_USE_AVATAR_FROM_DESC">
+  		<option value="0">AUP_NONE</option>
+  		<option value="alphauserpoints">AlphaUserPoints</option>
+  		<option value="gravatar">Gravatar</option>
+  		<option value="kunena">Kunena</option>
+  		<option value="cb">Community Builder</option>
+  		<option value="cbe">CBE</option>
+      <option value="jomsocial">JomSocial</option>
+      <option value="joomunity">Joomunity</option>
+  		<option value="clexus">Clexus PM</option>
+  	</param>
+  	<param name="@spacer" type="spacer" label="" />
+  	<param name="showUpdateCheck" type="radio" default="1" label="AUP_SHOW_UPDATECHECK" description="AUP_SHOW_UPDATECHECK_DESC">
+  		<option value="0">AUP_NO</option>
+  		<option value="1">AUP_YES</option>
+  	</param>
+  </params>
+</config>

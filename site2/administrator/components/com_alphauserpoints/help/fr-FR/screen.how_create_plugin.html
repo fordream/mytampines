@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US" xml:lang="en_US">
+<head>
+<title>Comment créer un plugin</title>
+<link href="css/help.css" rel="stylesheet" type="text/css" />
+<meta name="copyright" content="Copyright (C) 2008 Bernard Gilly. All rights reserved." />
+<meta name="license" content="http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL" />
+<style type="text/css">
+<!--
+.Style1 {
+	font-size: 14pt;
+	font-weight: bold;
+}
+.Style5 {color: #FF0000}
+-->
+</style>
+</head>
+<body>
+<h1>AlphaUserPoints - Comment cr&eacute;er un plugin (base) </h1>
+
+<p> La cr&eacute;ation d'un plugin (cr&eacute;ation d'une nouvelle r&egrave;gle pour un composant tier) se d&eacute;compose en 2 &eacute;tapes.<br />
+  <br />
+  <span class="Style1">Etape 1 - Insertion de l'API dans le composant </span><br />
+Ceci s'adresse bien s&ucirc;r en priorit&eacute; aux d&eacute;veloppeurs ou &agrave; toute personne ayant un niveau de connaissance suffisament avanc&eacute; en PHP. </p>
+<p>Il suffit d'ins&eacute;rer l'API suivante dans le code du composant &agrave; l'endroit souhait&eacute;. L'id&eacute;al est de faire suite une action pouvant rapporter des points &agrave; l'utilisateur connect&eacute;. Par exemple, dans un composant de commentaires ou de forum, il suffit d'ajouter l'API apr&egrave;s l'insertion du commentaire ou du nouveau topic dans la base de donn&eacute;es.<br />
+    <br />
+    <strong>API:</strong> </p>
+<p class="Style5">$api_AUP = JPATH_SITE.DS.'components'.DS.'com_alphauserpoints'.DS.'helper.php';<br />
+  if ( file_exists($api_AUP))<br />
+  {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;require_once ($api_AUP);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;AlphaUserPointsHelper::newpoints( 'nom_de_la_fonction' );<br />
+  }</p>
+<p><b>nom_de_la_fonction</b> repr&eacute;sente la r&egrave;gle qui va &ecirc;tre utilis&eacute;e pour attribuer des points &agrave; l'utilisateur en cours (s'il est enregistr&eacute; et logg&eacute;).<br />
+  Pour l'ensemble des r&egrave;gles int&eacute;gr&eacute;es dans AlphaUserPoints (fonctions syst&egrave;mes), les noms de fonction sont r&eacute;dig&eacute;es comme suit:</p>
+<p>exemple: <i>sysplgaup_newregistered</i> pour l'attribution de points &agrave; un nouvel utilisateur enregistr&eacute;.</p>
+<p>Il conviendrait de garder un nomage standard pour les plugins des composants tiers comme suit :</p>
+<p><i>plgaup_nomdelafonction</i></p>
+<p>Exemple <i>plgaup_newcomment</i> ou <i>plgaup_newtopic</i> pour reprendre l'exemple de l'insertion de cette API dans un composant de commentaire ou de forum.<br />
+  Le nom d'une fonction pour attribuer des points lors de la cr&eacute;ation d'un nouveau topic post&eacute; dans le composant Fireboard pourrait &ecirc;tre, par exemple, <i>plgaup_newtopic_fb</i>.</p>
+<p> <span class="Style1">Etape 2 - Cr&eacute;ation du fichier XML </span><br />
+  Il convient ensuite de cr&eacute;er un fichier xml pour faciliter l'installation de la r&egrave;gle dans AlphaUserPoints.<br />
+  5 &eacute;l&eacute;ments ont besoin d'&ecirc;tre sp&eacute;cifi&eacute;s:</p>
+<p>Le nom de la r&egrave;gle, sa description, le nom du composant utilisant la r&egrave;gle (com_exemple),  le nom de la fonction utilis&eacute;e par la r&egrave;gle et le dernier param&egrave;tre pour sp&eacute;cifier si les points sont fixes ou susceptibles de changer (<i>boolean</i> true ou false). </p>
+<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;<br />
+&lt;alphauserpoints type=&quot;plugin&quot;&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;rule&gt;<span class="Style5">Nom court de la r&egrave;gle</span>&lt;/rule&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;description&gt;<span class="Style5">Description de la r&egrave;gle</span>&lt;/description&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;component&gt;<span class="Style5">com_exemple</span>&lt;/component&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;plugin_function&gt;<span class="Style5">plgaup_nomdelafonction</span>&lt;/plugin_function&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;fixed_points&gt;<span class="Style5">true </span><i>ou</i><span class="Style5"> false</span>&lt;/fixed_points&gt;<br />
+&lt;/alphauserpoints&gt;</p>
+<p>Ce fichier XML doit &ecirc;tre encod&eacute; en utf-8 et peut &ecirc;tre ensuite archiv&eacute; (.zip).</p>
+<p class="Style1">Note aux d&eacute;veloppeurs </p>
+<p>Vous trouverez une documentation plus compl&egrave;te sur l'insertion et l'utilisation de cette API sur le site officiel de l'auteur  <a href="http://www.alphaplug.com">www.alphaplug.com</a>.</p>
+<p>&nbsp;</p>
+</body>
+</html>

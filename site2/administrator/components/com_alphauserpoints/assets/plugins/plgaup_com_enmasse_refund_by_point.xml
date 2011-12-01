@@ -1,0 +1,8 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<alphauserpoints type="plugin">
+     <rule>En Masse - Refund by point</rule>
+     <description>Change point of user when refunding by point</description>
+     <component>com_enmasse</component>
+     <plugin_function>plgaup_com_enmasse_refund_by_point</plugin_function>
+     <fixed_points>false</fixed_points>
+</alphauserpoints>

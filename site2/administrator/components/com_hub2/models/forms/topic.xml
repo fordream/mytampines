@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- topic.xml $Id: $ -->
+<form>
+	<fields>
+		<field name="name" type="text" id="name" class="inputbox validate required  custom-validate-length_0-1024 @lbl"
+			label="ADMIN_TOPIC_XML_LABEL_NAME"
+			size="52"
+			default=""
+			description="ADMIN_TOPIC_XML_DESC_NAME"
+			required="true"
+		/>
+        <field name="alias" type="text" id="alias" class="inputbox validate required custom-validate-length_0-255 @lbl"
+            label="ADMIN_TOPIC_XML_LABEL_ALIAS"
+            size="52"
+            default=""
+            description="ADMIN_TOPIC_XML_DESC_ALIAS"
+            required="true"
+        />
+		<field name="parent_id" type="list_topiclist"  id="parent_id" class="inputbox @lbl"
+			label="ADMIN_TOPIC_XML_LABEL_PARENT"
+			size="52"
+			default=""
+			description="ADMIN_TOPIC_XML_DESC_PARENT"
+		/>
+        <field name="comments" type="textarea" id="comments" class="inputbox @lbl"
+            label="ADMIN_TOPIC_XML_LABEL_COMMENT"
+            rows="5" cols="50"
+            default=""
+            description="ADMIN_TOPIC_XML_DESC_COMMENT"
+        />
+        <field name="metadesc" type="text" id="metadesc" class="inputbox @lbl"
+            label="ADMIN_TOPIC_XML_LABEL_METADESC"
+            size="20"
+            default=""
+            description="ADMIN_TOPIC_XML_DESC_METADESC"
+        />
+        <field name="metakey" type="text" id="metakey" class="inputbox @lbl"
+            label="ADMIN_TOPIC_XML_LABEL_METAKEY"
+            size="20"
+            default=""
+            description="ADMIN_TOPIC_XML_DESC_METAKEY"
+        />
+	</fields>
+</form>

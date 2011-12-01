@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<config>
+		<params  addpath="/administrator/components/com_djclassifieds/elements">
+			<param name="@djparamsheader" type="djparamsheader" default="MAIN" />		
+			<param name="exp_days" type="text" label="EXPDAYS" description="EXPDAYSDESC" size="5" default="7"  menu="hide" />
+			<!-- Hyperlocalizer
+			<param name="notify_days" type="text" label="NOTIFYDAYS" description="NOTIFYDAYSDESC" size="5" default="0"  menu="hide" />			
+			<param name="prom_price" type="text" label="PROMOTIONPRICE" description="PROMOTIONPRICEINP" size="5" default="10"  menu="hide" />
+            -->
+			<param name="promotion" type="list" default="1" label="PROMOTION" size="30" menu="hide">
+				<option value="1">YES</option>
+				<option value="0">NO</option>
+			</param>			
+			<param name="user_type" type="list" default="1" label="ACCESSLEVEL" description="ACCESSLEVELDESC" size="30" menu="hide">
+				<option value="1">Registered</option>
+				<option value="0">All users</option>
+			</param>
+			<param name="autopublish" type="list" default="1" label="Autopublish" description="AUTOPUBLISHDESC" size="30" menu="hide">
+				<option value="1">YES</option>
+				<option value="0">NO</option>
+			</param>
+			<param name="notify_admin" type="list" default="0" label="NOTIFYADMIN" description="NOTIFYADMINDESC" size="30" menu="hide">
+				<option value="1">YES</option>
+				<option value="0">NO</option>
+			</param>
+			<param name="notify_user_email" type="text" label="NOTIFYUSEREMAIL" description="NOTIFYUSEREMAILDESC" size="55" default=""  menu="hide" />
+			<!--  Hypelocalizer
+			<param name="paypal_user" type="text" label="PAYPALUSER" description="PAYPALUSERDESC" size="55" default=""  menu="hide" />
+			<param name="unit_price" type="text" label="UNITPRICE" size="5" default="EUR"  menu="hide" />			
+			 -->
+			<param name="@djparamsheader" type="djparamsheader" default="VIEW" />
+			<param name="limit_djitem_show" type="text" label="NUMBER_ITEMS" description="NUMBER_ITEMS_DESC" size="5" default="7" menu="hide" />
+			<param name="blog_columns_number" type="text" label="BLOG_COLUMNS_NUMBER" description="BLOG_COLUMNS_NUMBER_DESC" size="5" default="2" menu="hide" />
+			<param name="img_limit" type="text" label="IMGLIMIT" description="IMGLIMITINITEM" size="5" default="5" menu="hide"/>
+			<param name="img_maxsize" type="list" default="0" label="IMGMAXSIZELIMIT" description="IMGMAXSIZELIMIT_DESC" size="30" menu="hide">
+				<option value="0">0</option>
+				<option value="0,5">0,5</option>
+				<option value="1">1</option>
+				<option value="1,5">1,5</option>
+				<option value="2">2</option>
+				<option value="2,5">2,5</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</param>
+			<param name="introdesc_char_limit" type="text" label="INTRODESCCHARLIMIT" description="INTRODESCCHARLIMITDESC" size="5" default="120" menu="hide"/>
+			<param name="show_adsn_cat" type="list" default="1" label="NUMBEROFADSINCATEGORY" size="30" menu="hide">
+				<option value="1">YES</option>
+				<option value="0">NO</option>
+			</param>
+			<param name="allow_htmltags" type="list" default="0" label="ALLOWHTMLTAGS" size="30" menu="hide">
+				<option value="1">YES</option>
+				<option value="0">NO</option>
+			</param>
+			<param name="showitem_jump" type="list" default="0" label="JUMPTOCLASSIFIED" description="JUMPTOCLASSIFIEDDESC" size="30" menu="hide">
+				<option value="1">YES</option>
+				<option value="0">NO</option>
+			</param>
+			<param name="tooltip_img" type="list" default="1" label="TOOLTIPIMGTABLEVIEW" size="30" menu="hide">
+				<option value="1">YES</option>
+				<option value="0">NO</option>
+			</param>
+			<param name="tooltip_title" type="list" default="1" label="TOOLTIPTITLETABLEVIEW" size="30" menu="hide">
+				<option value="1">YES</option>
+				<option value="0">NO</option>
+			</param>
+			<param name="showprice" type="list" default="1" label="SHOWPRICEFIELD" size="30" menu="hide">
+				<option value="1">YES</option>
+				<option value="0">NO</option>
+			</param>
+			<param name="showcontact" type="list" default="1" label="SHOWCONTACTFIELD" size="30" menu="hide">
+				<option value="1">YES</option>
+				<option value="0">NO</option>
+			</param>	
+			<param name="ask_seller" type="list" default="1" label="ASKSELLERFORM" size="30" menu="hide">
+				<option value="1">YES</option>
+				<option value="0">NO</option>
+			</param>
+			<param name="showaddetails" type="list" default="1" label="SHOWADDETAILS" size="30" menu="hide">
+				<option value="1">YES</option>
+				<option value="0">NO</option>
+			</param>
+			<param name="show_footer" type="list" default="1" label="SHOWFOOTER" size="30" menu="hide">
+				<option value="1">YES</option>
+				<option value="0">NO</option>
+			</param>			
+			<param name="@djparamsheader" type="djparamsheader" default="IMAGES" />
+			<param name="bigth_width" type="text" label="POPUPTHWIDTH" description="POPUPTHWIDTH_DESC" size="5" default="600" menu="hide"/>
+			<param name="bigth_height" type="text" label="POPUPTHHEIGHT" description="POPUPTHHEIGHT_DESC" size="5" default="0" menu="hide" />			
+			<param name="smallth_width" type="text" label="SMALLTHWIDTH" description="SMALLTHWIDTH_DESC" size="5" default="56" menu="hide"/>
+			<param name="smallth_height" type="text" label="SMALLTHHEIGHT" description="SMALLTHHEIGHT_DESC" size="5" default="32" menu="hide" />
+			<param name="middleth_width" type="text" label="MIDDLETHWIDTH" description="MIDDLETHWIDTH_DESC" size="5" default="150" menu="hide"/>
+			<param name="middleth_height" type="text" label="MIDDLETHHEIGHT" description="MIDDLETHHEIGHT_DESC" size="5" default="110" menu="hide"/>
+			<param name="th_width" type="text" label="THWIDTH" description="THSIZE_DESC" size="5" default="270" menu="hide"/>
+			<param name="th_height" type="text" label="THHEIGHT" description="THSIZE_DESC" size="5" default="180" menu="hide"/>
+			<param name="catth_width" type="text" label="CATTHWIDTH" description="THSIZE_DESC" size="5" default="68" menu="hide"/>
+			<param name="catth_height" type="text" label="CATTHHEIGHT" description="THSIZE_DESC" size="5" default="50" menu="hide"/>
+			<param name="@djparamsheader" type="djparamsheader" default="SECUTITY_SPAM" />
+			<param name="ask_limit_one" type="text" label="ASKLIMITONE" description="ASKLIMITONEDESC" size="5" default="5" menu="hide"/>
+			<param name="ask_limit_hour" type="text" label="ASKLIMITHOUR" description="ASKLIMITHOURDESC" size="5" default="15" menu="hide"/>			
+			<param name="captcha" type="list" default="0" label="Captcha" size="30" menu="hide">
+				<!-- Hyperlocalizer <option value="1">YES</option>  -->
+				<option value="0">NO</option>
+			</param>
+		</params>
+	</config>

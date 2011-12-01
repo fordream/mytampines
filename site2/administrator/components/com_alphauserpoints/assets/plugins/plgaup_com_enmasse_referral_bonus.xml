@@ -1,0 +1,8 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<alphauserpoints type="plugin">
+     <rule>En Masse - Referral bonus</rule>
+     <description>Give points to users when people buy deals after clicking shared links by those users</description>
+     <component>com_enmasse</component>
+     <plugin_function>plgaup_com_enmasse_referral_bonus</plugin_function>
+     <fixed_points>true</fixed_points>
+</alphauserpoints>

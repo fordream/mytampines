@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it_IT" xml:lang="it_IT">
+<head>
+<title>AlphaUserPonts - Guida</title>
+<link href="css/help.css" rel="stylesheet" type="text/css" />
+<meta name="copyright" content="Copyright (C) 2008 Bernard Gilly. All rights reserved." />
+<meta name="license" content="http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL" />
+<style type="text/css">
+<!--
+.Style4 {
+	font-size: 14px;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<!-- Italian translation - traduzione in italiano: PGB - info@pgb75.it - www.pgb75.eu -->
+<body>
+<h1>AlphaUserPoints - Guida </h1>
+
+<p><b>Presentazione:</b> AlphaUserPoints &egrave; un sistema di punteggio per utenti a referenza (Referral User Points System). &Egrave; un componente che pu&ograve; assegnare o distribuire punti agli utenti registrati in base ad alcune azioni ed attivit&agrave; nel sito web. 
+AlphaUserPoints si comporta come un incentivo per promuovere la partecipazione degli utenti. Gli utenti spesso cercano maggior riconoscimento e competizione. &Egrave; anche utile per concorsi, sfide, partecipazione, gioco e come negozio online. Questo componente ha la propria sezione di invito/raccomandazione per referenza che possono usare anche gli utenti non registrati (basata su AlphaRecommend).</p>
+<p>  <b>Licenza:</b> AlphaUserPoints &egrave; rilasciato sotto licenza <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU/GPL</a>. <br />
+  <br />
+<b>Installazione:</b> installare il componente attraverso l'interfaccia di amminitrazione di di Joomla!. Durante l'installazione i plugin di sistema e i moduli di amministrazione vengono installati e automaticamente pubblicati (attivati). Se, comunque, la cartella dei plugin non ha i permessi in scrittura, si genera un errore e l'utente viene avvisato. Il componente dovr&agrave; essere reinstallato dopo aver impostato i giusti diritti per la cartella Plugins. </p>
+<p><b>Pannello di controllo generale di Joomla!:</b> durante l'installazione di AlphaUserPoints, un'icona viene aggiunta al pannello di controllo generale di Joomla! (mod_aupadmin). Questa icona consente di lanciare velocemente AlphaUserPoints e mostra anche un avviso nel caso ci siano richieste in attesa di approvazione.<br />
+  <br />
+  <b>Pannello di controllo di AlphaUserPoints:</b> <br />
+  <br />
+  <i>pulsante /men&ugrave; <strong>Configurazione </strong></i><br />
+  Questo men&ugrave; ti consente di configurare i paramentri di base per l'utilizzo del componente.</p>
+<p><i>pulsante /men&ugrave;<strong> Regole</strong> </i><br />
+  Questo men&ugrave; fornisce l'accesso alla lista delle regole per guadagnare punti in base ad alcune azioni eseguite dagli utenti registrati. La descrizione delle regole ti dar&agrave; informazioni riguardo il loro ruolo e le condizioni per guadagnare punti. Per installare nuove regole interagenti con componenti di terze parti, leggi <a href="#advanced">Approfondimento</a>. <br />
+  <br />
+  <i>pulsante /men&ugrave; <strong>Utenti</strong></i><br />
+  Questo men&ugrave; mostra tutti i membri registrati al sito con le loro rispettive identit&agrave; (ID) di AlphaUserPoint, il punteggio totale per ogni membro ed un collegamento ai dettagli di ogni azione che ha fruttato punti.<br />
+  <br />
+  <i>pulsante /men&ugrave; <strong>Plugin</strong> </i><br />
+  Questo men&ugrave; ti permette di aggiungere nuove regole interagenti con componenti di terze parti. Per maggiori informazioni su questo men&ugrave;, leggi <a href="#advanced">Approfondimento</a>. <br />
+  <br />
+  <i>pulsante /men&ugrave; <strong>Sincronizza utenti</strong> </i><br />
+  Questo men&ugrave; permette, dopo la prima installazione ,di sincronizzare i membri gi&agrave; registrati sul sito al loro identificatore AlphaUSerPoints (id di referenza, o referral id). Prima di sincronizzare gli utenti, per favore leggi la sezione <a href="#first">Per iniziare...</a>. <br />
+  <br />
+  <i>pulsante /men&ugrave; <strong>Ricalcola </strong></i><br />
+  Questo men&ugrave; ti permette di ricalcolare il totale dei punti di ogni membro dopo la rimozione o la modifica da parte di un amministratore delle azioni che comportano punti. <br />
+  <br />
+  <i>pulsante /men&ugrave; <strong>Azzera tutti i punti</strong> </i><br />
+  Questo men&ugrave; azzera tutti i contatori di punti per tutti i membri registrati. Puoi impostare manualmente questo contatore per ogni membro (men&ugrave; Statistiche utente)<br />
+  <br />
+  <i>pulsante /men&ugrave; <strong>Imposta punteggio massimo</strong></i><br />
+  Questo men&ugrave; pone un limite massimo ai punti che possono essere assegnati a tutti i membri registrati del sito. Digita 0 o lascia vuoto il campo se non vuoi porre limiti. Puoi comunque impostare manualmente il massimo punteggio per ogni membro (menu Statistiche utente). <br />
+  <br />
+  <i>pulsante /men&ugrave; <strong>Elimina punti scaduti</strong></i><br />
+Questo men&ugrave; ti permette di eliminare tutti i punti che hanno raggiunto la scadenza per ogni utente. Importante: questa azione comporta un ricalcolo automatico di tutti i punti per tutti gli utenti. </p>
+<p><i>pulsante /men&ugrave; <strong>Codici Coupon</strong></i><br />
+Questo men&ugrave; ti permette di creare codici Coupon per assegnare punti extra agli utenti. Generatore di Codici e generatore di coupons.</p>
+<p><i>pulsante /men&ugrave; <strong>Lotteria</strong></i><br />
+Questo men&ugrave; permette di creare una lotteria, un premio o una promozione per i tuoi utenti. Da 1 a 3 vincitori per ogni lotteria.</p>
+<p><i>pulsante /men&ugrave; <strong>Rango</strong></i><strong>/Medaglie </strong><br />
+Questo men&ugrave; permette di creare ranghi e medaglie e combinazioni dei due per i tuoi utenti.</p>
+<p><i>pulsante /men&ugrave;  <strong>Statistiche</strong></i><br />
+Questo men&ugrave; mostra i migliori 10 punti vinti e i migliori 10 punti spesi dagli utenti, ordinati per data.<br />
+<br />
+  <i>pulsante /men&ugrave; <strong>Esporta utenti attivi (file CSV) </strong></i><br />
+  Questo men&ugrave; lancia l'esportazione in file formato CSV (file di testo con valori separti da virgole) dei primi 50 utenti o dei pi&ugrave; attivi (quelli con i punteggi pi&ugrave; alti). <br />
+  <br />
+  <i>pulsante /men&ugrave; <strong>Esporta indirizzi e-mail (file CSV) </strong></i><br />
+Questo men&ugrave; lancia l'esportazione in file formato CSV (file di testo con valori separti da virgole) di tutti gli indirizzi e-mail immagazzinati nella tabella "dettagli" del componente, a seguito di un'azione tipo invita/raccomanda, raccomanda un articolo, ... </p>
+<p><span id="result_box" class="medium_text"><span style="background-color:
+ rgb(255, 255, 255);" title="Button / Menu Combine Activities">Button / Menu <b><i>combinare le attivit&agrave;</i></b><br />
+</span><span style="background-color: 
+rgb(255, 255, 255);" title="This menu allows to combine the set of all 
+actions in one activity from a specified date (perform database if you 
+have huge activity).">Questo menu consente di combinare l'insieme di tutte le azioni in una attivit&agrave; da una determinata data (ad effettuare database se avete un'attivit&agrave; enorme).</span></span><br />
+  <br />
+  <i>pulsante /men&ugrave; <strong>Informazioni </strong></i><br />
+  Informazioni sul componente. <br />
+  <br />
+  <i>pulsante /men&ugrave; <strong>Come creare un plugin</strong> </i><br />
+  Questo men&ugrave; mostra una guida che spiega come integrare l'API (interfaccia di programmazione avanzata) di AlphaUserPoints in un componente di terze parti e come generare un file XML di installazione della nuova regola riguardante questo componente di terze parti. <br />
+  <br />
+  <i>pulsante /  men&ugrave; </i> <strong><em>Guida</em></strong><br />
+  Mostra la guida che stai leggendo. <br />
+  <b><br />
+  <strong><a name="first" id="first"></a></strong>Per iniziare...:</b> <br />
+  <br />
+  <b class="Style4">Impostare le regole pre-esistenti </b><br />
+  Attraverso l'interfaccia di amministrazione di Joomla! clicca sul men&ugrave; gestione componenti e poi su AlphaUserPoints. Poi clicca il sotto-men&ugrave; Regole (o direttamente Regole se sei gi&agrave; sul pannello di controllo del componente AlphaUserPoints).<br />
+  <br />
+  Quando lanci per la prima volta il dispositivo, appare un messaggio informativo nel pannello di controllo. Questo messaggio ti informa che devi prima sincronizzare gli utenti/membri registrati con AlphaUserPoints. Comunque, se vuoi assegnare punti ad ogni registrazione di un nuovo utente e non penalizzare i membri precedentemente registrati, devi impostare la regola per i nuovi membri prima di fare la sincronizzazione. Modifica la regola ed assegna un certo numero di punti per ogni nuovo membro. Registra le modifiche e ora sei pronto a sincronizzare tutti i membri. A questi ultimi verranno accreditati i punti. Non appena ci sar&agrave; un nuovo membro, verranno assegnati i punti specificati nella regola.<br />
+  Imposta ed attiva altre regole in base ai tuoi bisogni. La descrizione delle regole ti daranno informazioni sul loro ruolo e sulle condizioni per assegnare punti.<br />
+  <i>Nota: la regola per i nuovi utenti non pu&ograve; essere disabilitata. Puoi solo porre a zero il numero di punti assegnati per questa regola se non vuoi che vengano assegnati punti per questa azione.</i></p>
+<ol>
+  <li>Regola <i>Nuovo Utente</i>: punti assegnati o non assegnati per ogni nuovo utente registrato sul sito.</li>
+  <li>Regola <strong><i>Accesso giornaliero</i></strong>: assegna punti per ogni accesso giornaliero.</li>
+  <li>Regola <i>Invita</i>: punti assegnati o non assegnati quando un utente domanda a qualcun altro di registrarsi sul sito web (invio di una e-mail).</li>
+  <li>Regola <i>Invito riuscito</i>: punti assegnati o non assegnati all'utente che ha mandato un invito quando l'utente invitato utente si registra sul sito in seguito all'invito.</li>
+  <li>Regola <i>Invia articolo</i>: punti assegnati o non assegnati all'utente che invia un articolo.</li>
+  <li>Regola <i>Invia collegamento (weblink)</i>: punti assegnati o non assegnati all'utente che invia un collegamento.</li>
+  <li>Regola <i>Invita un amico a leggere</i>: punti assegnati o non assegnati quando un membro invita un amico a leggere un articolo (guadagna punti quando l'articolo viene letto). Utilizza la funzione "invia ad un amico" nativa di Joomla!.</li>
+  <li>Regola <i>Lettore all'autore</i>: punti assegnati quando uno dei suoi articoli viene letto da un utente.</li>
+  <li>Regola <strong><i>Leggi articolo</i></strong>: assegna punti quando un utente registrato legge un articolo. Per cambiare in &quot;<i>Pagato per leggere</i>&quot;, digita un punteggio negativo (esempio: -150). I punti sono assegnati o rimossi solo per la prima lettura.</li>
+  <li>Regola <strong><i>Vota articolo</i></strong>: assegna punti quando un utente registrato vota un articolo col sistema di voti interno di Joomla!.</li>
+  <li>Regola <strong><i>Clicca banner</i></strong>: assegna punti quando un utente registrato clicca su un banner (con il componente com_banners, vengono assegnati punti per il primo click su ogni banner).</li>
+  <li>Regola <i>Risposta ad un sondaggio</i>: punti assegnati all'utente dopo che ha risposto ad un sondaggio.</li>
+  <li>Regola <i>Punti da utente ad utente</i>: consente agli utenti di trasferire tutti o parte dei propri punti ad altri utenti. Richiede la creazione di un men&ugrave; collegato al componente nel frontend (lato utente del sito).</li>
+  <li>Regola <i>Punti da raccomandazione</i>: gli utenti che hanno raccomandato (altri utenti, articoli, collegamenti) guadagnano punti bonus pari ad una percentuale di tutti i punti guadagnati dalle loro raccomandazioni.</li>
+  <li>Regola <i>Punti bonus</i>: assegna punti bonus ad utenti specifici (Backend (lato amministrazione sito) -&gt; AlphaUserPoints -&gt; men&ugrave; Statistiche utente).</li>
+  <li>Diventa autore: specifica il numero di punti sufficiente ad autorizzare un utente registrato a cambiare livello e diventare autore.</li>
+  <li>Diventa editore: specifica il numero di punti sufficiente ad autorizzare un utente registrato a cambiare livello e diventare editore.</li>
+  <li>Diventa pubblicatore: specifica il numero di punti sufficiente ad autorizzare un utente registrato a cambiare livello e diventare pubblicatore.</li>
+  <li>Regola <i>Escludi utenti specificati</i>: esclude alcuni referenti dall'allocazione di punti (utilissimo agli amministratori).</li>
+  <li>Regola <i>Avviso per e-mail</i>: spedisce un messaggio agli utenti appena guadagnano punti.</li>
+  <li>Regola <i>Avviso "Vincitore" </i>: spedisce un messaggio all'utente e agli amministratori, quando l'utente ha raggiunto il massimo numero di punti richiesti (richiede "Stabilisci punteggio massimo").</li>
+  <li>Regola <strong><i>Compra punti con Paypal</i></strong>: autorizza i tuoi utenti ad acquistare punti con paypal. Imposta tutti i parametri sul menu.</li>
+  <li>Regola <strong><i>Codici punti Coupon</i></strong>: permette agli utenti di digitare un codice nel modulo apposito per guadagnare punti extra. Devi installare il modulo <i>mod_alphauserpoints_couponcode</i>.</li>
+  <li>Regola <strong><i>Lotteria</i></strong>: questa regola permette di attivare una lotteria (sistema a premi).</li>
+  <li>Regola <i><b>Personalizza</b></i>: assegna o cancella punti a piacere ad un utente specifico con la descrizione del motivo (Backend -&gt; men&ugrave; Utenti -&gt; Dettagli -&gt; barra strumenti -&gt; pulsante Punti personalizzati)</li>
+  <li>Regola <strong><em>Buon compleanno</em></strong>: assegna punti una volta all'anno alla data del compleanno dell'utente. <em>Nota</em>: l'utente deve accedere al sito quel giorno.</li>
+  <li>Regola <em><strong>Contenuto</strong></em>: assegnare o rimuovere i punti di vista su qualsiasi contenuto (o di qualsiasi componente com_content utilizzando il plug contenuto "onPrepareContent" di Joomla!). Basta aggiungere il tag <strong>{AUP::CONTENT=XXX}</strong> nel tuo contenuto e dove XXX &egrave; il numero di punti, &egrave; possibile utilizzare i valori positivi o negativi.</li>
+  <li>Regola <em><strong>Carica avatar</strong></em> : Assegna punti quando un utente caricare una foto o un avatar nel suo profilo interno con il sistema di avatar AlphaUserPoints.</li>
+  <li>Regola <em><strong>Profilo completo</strong></em>: Assegna punti quando un utente ha compilato il 100% del suo profilo. Deve essere utilizzato con il sistema interno di AlphaUserPoints avatar. Assegna il 10% completo sulla registrazione, assegna il 50% con l'immagine o avatar, raggiungere il 100% con la piccola descrizione, data di nascita, il sesso e la citt&agrave;. Se il profilo basso e diventa incompleto, i punti verranno rimossi automaticamente.</li>
+  <li>Regola<i><b>Inattivo utente</b></i> :  Rimuovere i punti per gli utenti inattivi ogni periodo preimpostato.</li>
+  <li><span id="result_box" class="long_text"><span style="background-color: 
+rgb(255, 255, 255);" title="R&egrave;gle Activit&eacute;s combin&eacute;es: Permet &agrave; 
+l'administrateur du site de combiner l'ensemble des activit&eacute;s en une 
+seule activit&eacute; ant&eacute;rieurement &agrave; une date donn&eacute;e.">Regola <i><b>Attivit&agrave; combinate</b></i>: consente all'amministratore del sito di combinare tutte le attivit&agrave; in una sola attivit&agrave; entro una determinata data. </span><span 
+style="background-color: rgb(255, 255, 255);" title="Am&eacute;liore les 
+performances de la base de donn&eacute;es si votre site g&eacute;n&egrave;re une grand 
+activit&eacute; journali&egrave;re de la part des utilisateurs.">Migliora le prestazioni del database se il vostro sito genera una grande attivit&agrave; giornaliera da parte degli utenti.</span></span></li>
+  <li><span id="result_box" class="long_text"><span style="background-color: 
+rgb(255, 255, 255);" title="Le lecteur donne des points &agrave; l'auteur pour 
+pouvoir lire son article avec possibilit&eacute; de customiser le montant des 
+points."><span id="result_box" class="long_text"><span style="background-color: 
+rgb(255, 255, 255);" title="R&egrave;gle Activit&eacute;s combin&eacute;es: Permet &agrave; 
+l'administrateur du site de combiner l'ensemble des activit&eacute;s en une 
+seule activit&eacute; ant&eacute;rieurement &agrave; une date donn&eacute;e.">Regola <i><span class="short_text" id="result_box"><strong><span style="background-color: 
+rgb(255, 255, 255);" title="Donner des points &agrave; l'auteur">Dare punti per l'autore</span></strong></span></i>:</span></span> Il giocatore guadagna punti l'autore a leggere il suo articolo con possibilit&agrave; di personalizzare la quantit&agrave; di punti. </span><span 
+title="Ajouter le tag {AUP::CONTENTAUTHOR=XXX} dans votre article ou XXX
+ est le nombre de points.">Aggiungi il tag <strong>{AUP::CONTENTAUTHOR=XXX}</strong> nel tuo articolo o XXX &egrave; il numero di punti. </span><span 
+style="background-color: rgb(255, 255, 255);" title="Ce nombre est 
+toujours positif.">Questo numero &egrave; sempre positivo. </span><span id="result_box" class="long_text"><span title="Ce nombre est 
+toujours positif."></span><span title="Le montant des points sera 
+retirer du compte du lecteur et les points seront attribu&eacute;s &agrave; l'auteur 
+de l'article.">Il numero di punti verranno rimossi dal conto del giocatore ed i punti saranno assegnati per l'autore dell'articolo.</span></span></span></li>
+</ol>
+<p><span id="result_box" class="long_text"><span style="background-color: 
+rgb(255, 255, 255);" title="Il existe aussi 2 r&egrave;gles auto-d&eacute;tect&eacute;es si 
+le composant Kunena forum est isntall&eacute; sur le site.">Ci sono 2 regole anche rilevate automaticamente se il componente &egrave; Kunena strutture sito di forum sul sito. </span><span style="background-color: rgb(255, 255, 
+255);" title="Une r&egrave;gle pour assigner des points lors de la cr&eacute;ation 
+d'un nouveau topic and une r&egrave;gle pour l'assignation de points sur une 
+r&eacute;ponse &agrave; un topic.">Una regola per l'assegnazione dei punti durante la creazione di un nuovo argomento e una regola per l'assegnazione di punti su una risposta ad un argomento. </span><span style="background-color: 
+rgb(255, 255, 255);" title="Il ya lieu d'activer cette int&eacute;gration dans 
+le param&eacute;trage du composant Kunena forum.">&Egrave; necessario attivare questa integrazione nella parametrizzazione del forum Kunena componente.</span></span></p>
+<p>  <br />
+  <b class="Style4">Creare i men&ugrave;</b><br />
+  AlphaUserPoints include 8 opzioni per creare un men&ugrave; frontend (lato utente del sito). <br />
+<ul>
+  <li> Un men&ugrave; per visualizzare i punti totali di un utente registrato e connesso. Questo men&ugrave; verr&agrave; usato principalmente per adattarsi al men&ugrave; utente.<br /></li>
+  <li> Un men&ugrave; per visualizzare la lista di tutti i membri, della loro identit&agrave; di riferimento e dei loro punti.<br /></li>
+  <li> Un men&ugrave; che permette agli utenti registrati di cedere punti ad altri utenti. Per&ograve; il donatore deve conoscere la ID AlphaUSerPoints del ricevente. Questo men&ugrave; sar&agrave; principalmente usato per adattarsi al men&ugrave; utente e dovr&agrave; essere attiva la regola che consente l'assegnazione di punti da utente a utente.<br /></li>
+  <li> Un men&ugrave; per inviare inviti / raccomandazioni. Queste ultime possono essere utilizzate anche dagli ospiti (non membri, quindi niente punti). Questo men&ugrave; ha molti parametri specifici per la sicurezza (anti-flood) e l'importazione di indirizzi e-mail (integrazione del widget "rubrica indirizzi" di Plaxo <span id="result_box" class="medium_text"><span style="background-color: rgb(255, 255, 255);" title="ou OpenInviter)." onmouseover="this.style.backgroundColor='#ebeff9'" onmouseout="this.style.backgroundColor='#fff'">o OpenInviter). </span><span style="background-color: rgb(255, 255, 255);" title="IMPORTANT: l'utilisation de l'option OpenInviter requiert l'installation du composant com_openinviter." onmouseover="this.style.backgroundColor='#ebeff9'" onmouseout="this.style.backgroundColor='#fff'">IMPORTANTE: L'uso di opzione OpenInviter richiede l'installazione del componente <a href="http://openinviter.com/" target="_blank">com_openinviter</a>.</span></span><br />
+  </li>
+  <li> Un men&ugrave; autorizzare i tuoi utenti ad acquistare punti con Paypal. Questo men&ugrave; offre pochi parametri per Paypal e il numero di punti da acquistare. Se non hai un profilo Paypal, puoi ottenerne uno in modo facile e veloce registrandoti all'indirizzo <a href="http://www.paypal.com">www.paypal.com</a>. Se hai gi&agrave; il tuo profilo, devi solo mantenerlo in modo che funzioni per acquistare punti inclusi in AlphaUserPoints. Accedi al tuo profilo e modificalo. Vai al men&ugrave; <i>Preferenze di vendita</i> e clicca su <i>Preferenze di pagamento dei siti web</i>. Abilita <i>Auto Return</i>: questo permette ad AlphaUserPoints di tornare al tuo sito dopo il pagamento. Devi scrivere un indirizzo (URL) di ritorno. Puoi digitare qualsiasi indirizzo (URL) valido: AlphaUserPoints sovrascriver&agrave; questa impostazione (esempio: http://www.esempio.com). Attiva Trasferimento dati di pagamento: &egrave; richiesto per verificare le transazioni. Registra le modifiche al tuo profilo. Riceverai un messaggio che ti sveler&agrave; il tuo gettone di identit&agrave; (Identity Token). Puoi comunque ricevere questo gettone tornando alle Preferenze di pagamento per siti web.</li>
+  <li> Un men&ugrave; per listare le medaglie assegnate.</li>
+  <li> Un men&ugrave; per visualizzare un collegamento ai feed RSS delle ultime attivit&agrave;.</li>
+  <li> Un men&ugrave; per visualizzare le ultime attivit&agrave; con paginazione.</li>
+</ul>
+<br />
+  Per usare ReCaptcha (anti-spam), devi prima ottenere i codici per l'utilizzo da questo sito: <a href="http://recaptcha.net/api/getkey" target="_blank">http://recaptcha.net/api/getkey</a> (sito in inglese).<br />
+  <br />
+  Per creare un men&ugrave; ad AlphaUserPoints seleziona "nuovo" nell'interfaccia per creare men&ugrave; di Joomla! e poi scegli il tipo di men&ugrave; dall'albero. Digita un nome per questo men&ugrave; e poi attivalo se necessario. Per maggiori informazioni su come creare men&ugrave; in Joomla! consulta la guida. <br />
+  <br />
+  <p><b class="Style4">Messaggi di congratulazioni agli utenti disabilitati sul frontend</b><br /> 
+  Utilizza il men&ugrave; Configurazione ed abilita ao disabilita i messaggi sul frontend.
+</p>
+  <p><b class="Style4"><span id="result_box" class="short_text"><span style="background-color: 
+rgb(255, 255, 255);" title="Autoriser les visiteurs &agrave; voir le profil des
+ membres">Permettere ai visitatori di vedere il profilo di iscritti</span></span></b><br />
+    <span id="result_box" class="medium_text"><span style="background-color:
+ rgb(255, 255, 255);" title="Vous pouvez activer ou d&eacute;sactiver l'option 
+afin que les visiteurs voient ou ne voient pas le profil des membres 
+inscrits.">&Egrave; possibile attivare o disattivare l'opzione in modo che i visitatori potranno vedere o non vedere il profilo di utenti registrati.</span></span></p>
+  <p><b class="Style4">Cambiare l'identificatore del prefisso</b><br />
+
+Puoi cambiare il prefisso identificatore di AlphaUserPoints nel men&ugrave; Configurazione. Puoi digitare un prefisso particolare per gli utenti che si registrano direttamente sul tuo sito ed un altro per gli utenti che arrivano su referenza/invito: 7 caratteri al massimo.</p>
+<p><b class="Style4">Modificare il tipo di identit&agrave;  di referenza (Referral ID): </b><br />
+Puoi cambiare il tipo di identificatore di AlphaUserPoints nel men&ugrave; Configurazione. Scegli fra casuale o nome utente come identificatore di referenza.</p>
+<p><b class="Style4">Limitare i punti giornalieri: </b><br />
+Se vuoi limitare i punti gudagnati al giorno, puoi digitarne il numero nel men&ugrave; Configurazione, altrimenti lasciare bianco il campo.</p>
+<p><b class="Style4">Lotteria:<br />
+</b><b>Passo primo</b>: se vuoi offrire una lotteria ai tuoi utenti, devi abilitare la regola &quot;Lotteria&quot;. Poi aggiungi una lotteria e impostala. Puoi scegliere di offrire punti, un codice coupon ai tuoi utenti regisrati <span id="result_box" class="short_text"><span style="background-color: 
+rgb(255, 255, 255);" title="ou bien un email avec un lien pour un 
+t&eacute;l&eacute;chargement par exemple.">o una e-mail con un link per il download, per esempio.</span></span><br />
+<b>Passo secondo:</b> (facoltativo): per la registrazione di utenti ad una lotteria, puoi mettere la seguente etichetta (tag) nel contenuto di un articolo per attivare il plugin contenuto di Joomla!: <b>{AUP::RAFFLE=ID}</b> dove ID &egrave; l'identificatore della lotteria. Questa etichetta visualizza un pulsante per la partecipazione alla lotteria degli utenti registrati al sito.<br />
+Ora, nel backend, hai il numero di utenti iscritti a questa lotteria. Se clicchi su questo numero, puoi vedere l'intera lista dei partecipanti alla lotteria ed esportarla in un file formato CSV.<br />
+<span id="result_box" class="medium_text"><span style="background-color:
+ rgb(255, 255, 255);" title="Si l'inscription multiple est autoris&eacute;e 
+alors un membre enregistr&eacute; pourra alors s'inscrire plusieurs fois &agrave; un 
+tirage, ceci augmentant ses chances de gagner tel qu'&agrave; un tirage de 
+loterie avec des billets." 
+onmouseover="this.style.backgroundColor='#ebeff9'" 
+onmouseout="this.style.backgroundColor='#fff'">Se la registrazione multipla &egrave; consentito quando un utente registrato pu&ograve; quindi registrare pi&ugrave; volte in un pareggio, questo aumenta le sue probabilit&agrave; di vincere come una lotteria con i biglietti.</span></span></p>
+<p><b class="Style4">Livello/Rango e Medaglie: </b><br />
+ Possono essere usati tutti insieme o individualmente. Ranghi o medaglie possono essere assegnati automaticamente quando un utente raggiunge un certo numero di punti (digita tale numero di punti in rango/medaglia) oppure manualmente ad un utente (imposta a zero il valore del campo). In tutti i casi, il rango o la medaglia possono venire modificati a mano dall'amministratore direttamente nei dettagli dell'utente. <span id="result_box" class="long_text"><span style="background-color: 
+rgb(255, 255, 255);" title="If you assign a rank that is normally 
+intended to be assigned automatically to a certain level of points, it 
+will not be taken into account.">Se si assegna un rango che &egrave; normalmente destinato ad essere assegnati automaticamente a un certo livello di punti, non sar&agrave; presa in considerazione. </span><span 
+style="background-color: rgb(255, 255, 255);" title="It is recommended 
+not to mix the two types of rank (automatic or manual).">Si raccomanda di non mescolare i due tipi di rango (automatico o manuale).</span></span></p>
+<p>Quando assegni una medaglia ad un utente, puoi aggiungere una descrizione o il motivo dell'assegnazione. Se lasci vuoto il campo, verr&agrave; visualizzata la descrizione preimpostata che una medaglia &egrave; stata assegnata. Il rango e le medaglie preimpostate create durante l'installazione del componente possono essere rimosse senza problemi se non hai intenzione di usarli. Se non ci sono rango/medaglia, le colonne per mostrare l'icona o il numero delle medaglie non saranno mostrate nella gestione dell'utente. </p>
+<p><b class="Style4">Mostra Punti totali per l'utente connesso in un articolo : </b><br />
+Utilizzare il tag <strong>{AUP::SHOWPOINTS}</strong> nel contenuto del prodotto fino al punto desiderato per visualizzare il totale parziale delle dell'utente connesso.</p>
+<p><b class="Style4">Controlla versione : </b><br />
+Puoi mostrare/nascondere il controllo della versione nel men&ugrave; Configurazione.<br />
+  
+  <b><strong><a name="advanced" id="advanced"></a></strong>Approfondimenti: </b><br />
+  <br />
+  <span class="Style4">Installazione di plugin di terze parti</span> <br />
+  Per aggiungere nuove regole o per interagire con componenti di terze parti, clicca sul men&ugrave; o sul pulsante "Plugin" nel pannello di controllo del componente e poi seleziona il file .zip o .xml che contiene la nuova regola. Premi il pulsante "carica e installa". Se il file &egrave; stato caricato correttamente, la nuova regola comparir&agrave; nella lista di quelle esistenti. Seleziona questa nuova regola e abilitala per soddisfare le tue richieste; Premere il pulsante "Nuovo" dalla lista di regole ti permette anche di aggiungere plugin nello stesso modo. <br />
+  <br />
+  Se desideri maggiori informazioni su come creare un plugin, consulta "<a href="screen.how_create_plugin.html">Come creare un plugin</a>."<br />
+</p>
+</body>
+</html>

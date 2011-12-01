@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- editorsitesrelations.xml $Id: $ -->
+<form>
+	<fields>
+		<field name="site" type="list_sitelist" id="site" class="inputbox @lbl"
+			label="ADMIN_EDITOR_XML_LABEL_SITES"
+            size="10"
+            multiple="multiple"
+			default=""
+			description="ADMIN_EDITOR_XML_DESC_SITES"
+		/>
+	</fields>
+</form>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: acl.xml 1159 2009-02-26 10:15:29Z eddieajau $ -->
+<form>
+	<fields>
+		<field
+			name="id"
+			type="text"
+			id="id"
+			class="readonly"
+			label="Control_Label_Id"
+			size="10"
+			default="0"
+			required="true"
+			readonly="true" />
+		<field
+			name="section_value"
+			type="list_sections"
+			id="section_value"
+			class="inputbox"
+			label="Control_Label_Section"
+			default="user"
+			description="This is the section the rule is placed in" />
+		<field
+			name="note"
+			type="text"
+			id="note"
+			class="inputbox validate required"
+			label="Control_Label_Note"
+			size="60"
+			default=""
+			required="true" />
+		<field
+			name="return_value"
+			type="text"
+			id="return_value"
+			class="inputbox"
+			label="Control_Label_Return_Value"
+			size="30"
+			default="" />
+		<field
+			name="enabled"
+			type="radio"
+			id="enabled"
+			class="inputbox"
+			label="Control_Label_Enabled"
+			default="1">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field
+			name="allow"
+			type="radio"
+			id="allow"
+			class="inputbox"
+			label="Control_Label_Allowed"
+			default="1">
+			<option value="0">Control_Option_Deny</option>
+			<option value="1">Control_Option_Allow</option>
+		</field>
+		<field
+			name="acl_type"
+			type="hidden"
+			id="acl_type"
+			class="inputbox"
+			label="Control_Label_Acl_Type"
+			default="1"
+			readonly="readonly">
+			<option value="1">Control_Option_Acl_Type1</option>
+			<option value="2">Control_Option_Acl_Type2</option>
+			<option value="3">Control_Option_Acl_Type3</option>
+		</field>
+		<field
+			name="updated_date"
+			type="text"
+			id="updated_date"
+			class="readonly"
+			label="Control_Label_Updated_Date"
+			size="30"
+			default=""
+			readonly="true" />
+	</fields>
+</form>

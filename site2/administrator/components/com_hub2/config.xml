@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <!-- $Id: $ //-->
+<config>
+  <params addpath="/components/com_hub2/models/elements">
+    <param name="@spacer" type="spacer" menu="hide" default="Global Settings (For Hub Only)"
+      label="" description="" />
+    <param name="timezone" type="timezone" menu="hide" default=""
+      label="CONFIG_XML_TIMEZONE" description="CONFIG_XML_DESC_TIMEZONE" />
+    <param name="imagefolder" type="text" menu="hide" default=""
+      label="CONFIG_XML_IMAGEFOLDER" description="CONFIG_XML_DESC_IMAGEFOLDER" />
+    <param name="userimagefolder" type="text" menu="hide" default="userimages"
+      label="CONFIG_XML_USERIMAGEFOLDER" description="CONFIG_XML_DESC_USERIMAGEFOLDER" />
+    <param name="allowed_media_usergroups" menu="hide" type="text"
+      default="Stringer,Content Editor" size="50" label="CONFIG_XML_MEDIAUSERGROUP"
+      description="CONFIG_XML_DESC_MEDIAUSERGROUP" />
+    <param name="media_handler" type="radio" menu="hide" default="azure"
+      label="CONFIG_XML_IMAGEHANDLER" description="CONFIG_XML_DESC_IMAGEHANDLER">
+      <option value="hub2">Hub2</option>
+      <option value="azure">Azure</option>
+    </param>
+    <param name="azure_account_name" menu="hide" type="text"
+      default="" size="50" label="CONFIG_XML_AZURE_ACC_NAME" description="CONFIG_XML_DESC_AZURE_ACC_NAME" />
+    <param name="azure_account_key" menu="hide" type="text" default=""
+      size="130" label="CONFIG_XML_AZURE_ACC_KEY" description="CONFIG_XML_DESC_AZURE_ACC_KEY" />
+        <param name="azure_container_name" menu="hide" type="text"
+            default="uploads" size="50" label="CONFIG_XML_AZURE_CONTAINER_NAME" description="CONFIG_XML_DESC_AZURE_CONTAINER_NAME" />
+    <param name="sitemanagerurl" menu="hide" type="text" default=""
+      size="50" label="CONFIG_XML_SITEMANAGERURL" description="CONFIG_XML_DESC_SITEMANAGERURL" />
+
+    <param name="@spacer" type="spacer" menu="hide" default="Appointment Booking Control (For Hub Only)" label=""
+      description="" />
+      <param name="ap_time_lock" type="text" menu="hide" default="2"
+      label="AP_TIME_LOCK_LABEL" description="AP_TIME_LOCK_DESC">
+    </param>
+
+    <param name="@spacer" type="spacer" menu="hide" default="Social Network Settings (For Hub Only)"
+      label="" description="" />
+    <param name="facebook_app_id" menu="hide" type="text" default=""
+      size="50" label="CONFIG_XML_FACEBOOKAPPID" description="CONFIG_XML_DESC_FACEBOOKAPPID" />
+    <param name="facebook_api_key" menu="hide" type="text" default=""
+      size="50" label="CONFIG_XML_FACEBOOKAPIKEY" description="CONFIG_XML_DESC_FACEBOOKAPIKEY" />
+    <param name="facebook_app_secret" menu="hide" type="text"
+      default="" size="50" label="CONFIG_XML_FACEBOOKAPPSECRET"
+      description="CONFIG_XML_DESC_FACEBOOKAPPSECRET" />
+
+    <param name="@spacer" menu="hide" type="spacer" default="Display control (For Hub only)"
+      label="" description="" />
+    <param name="date_input_box_size" menu="hide" type="text" default="30" size="20"
+      label="CONFIG_XML_DATEINPUTBOXSIZE" description="CONFIG_XML_DESC_DATEINPUTBOXSIZE" />
+    <param name="items_byuser_query_limit" menu="hide" type="text" default="100"
+      size="20" label="CONFIG_XML_ITEMSBYUSERQUERYLIMIT" description="CONFIG_XML_DESC_ITEMSBYUSERQUERYLIMIT" />
+
+    <param name="@spacer" type="spacer" default="Comment Moderation (For Hub Only)"
+      label="" description="" />
+    <param name="moderateComments" type="radio" menu="hide" default="1"
+      label="CONFIG_XML_MODERATECOMMENTS" description="CONFIG_XML_DESC_MODERATECOMMENTS">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="enable_comment_notification" type="radio" default="1"
+      label="CONFIG_XML_ENABLE_COMMENT_NOTICE" description="CONFIG_XML_DESC_ENABLE_COMMENT_NOTICE">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="notification_email" type="text" default=""
+      label="CONFIG_XML_NOTIFICATION_EMAIL" description="CONFIG_XML_DESC_NOTIFICATION_EMAIL">
+    </param>
+
+    <param name="@spacer" type="spacer" menu="hide" default="Global settings (Hub and Spokes)"
+      label="" description="" />
+    <param name="email_signature" menu="hide" type="text" default=""
+      size="50" label="CONFIG_XML_EMAIL_SIGNATURE" description="CONFIG_XML_EMAIL_SIGNATURE_DESC" />
+    <param name="fixed_smtp_email" menu="hide" type="text" default=""
+      size="50" label="CONFIG_XML_FIXED_SMTP_EMAIL" description="CONFIG_XML_FIXED_SMTP_EMAIL_DESC" />
+    <param name="default_smtp_reply_email" menu="hide" type="text" default=""
+      size="50" label="CONFIG_XML_SMTP_REPLY_EMAIL" description="CONFIG_XML_SMTP_REPLY_EMAIL_DESC" />
+    <param name="default_admin_email" menu="hide" type="text" default=""
+      size="50" label="CONFIG_XML_ADMIN_EMAIL" description="CONFIG_XML_ADMIN_EMAIL_DESC" />
+
+    <param name="@spacer" type="spacer" menu="hide" default="Global settings (For Spokes Only)"
+      label="" description="" />
+    <param name="hub2publishurl" menu="hide" type="text" default=""
+      size="50" label="CONFIG_XML_HUB2PUBLISHURL" description="CONFIG_XML_DESC_HUB2PUBLISHURL" />
+
+    <param name="@spacer" type="spacer" menu="hide" default="Social Networking settings (For Spokes Only)"
+      label="" description="" />
+    <param name="siteloginmaxtries" menu="hide" type="text" default=""
+      label="CONFIG_XML_SITE_LOGIN_MAXTRIES" description="CONFIG_XML_SITE_LOGIN_MAXTRIES_DESC" />
+    <param name="add_this_account" menu="hide" type="text" default=""
+      size="50" label="CONFIG_XML_ADDTHISACCOUNT" description="CONFIG_XML_DESC_ADDTHISACCOUNT" />
+    <param name="bit_ly_user" menu="hide" type="text" default=""
+      size="50" label="CONFIG_XML_BIT_LY_USER" description="CONFIG_XML_DESC_BIT_LY_USER" />
+    <param name="bit_ly_key" menu="hide" type="text" default=""
+      size="50" label="CONFIG_XML_BIT_LY_KEY" description="CONFIG_XML_DESC_BIT_LY_KEY" />
+
+    <param name="@spacer" type="spacer"
+      default="Display control (For Spokes only)" label=""
+      description="" />
+        <param name="use_javascript_hits" type="radio" default="0"
+            label="CONFIG_XML_USE_JAVASCRIPT_HITS" description="CONFIG_XML_DESC_USE_JAVASCRIPT_HITS">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+    <param name="currency_sym" type="list" default="$"
+      label="CONFIG_XML_CURRENCY_SYMBOL" description="CONFIG_XML_DESC_CURRENCY_SYMBOL">
+      <option value="$">$</option>
+    </param>
+    <param name="is_deal_site" type="radio" menu="hide" default="0"
+      label="CONFIG_XML_IS_DEAL_SITE" description="CONFIG_XML_DESC_IS_DEAL_SITE">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="thumbwidth" type="text" default=""
+      label="CONFIG_XML_THUMBWIDTH" description="CONFIG_XML_DESC_THUMBWIDTH" />
+    <param name="thumbheight" type="text" default=""
+      label="CONFIG_XML_THUMBHEIGHT" description="CONFIG_XML_DESC_THUMBHEIGHT" />
+    <param name="smallwidth" type="text" default=""
+      label="CONFIG_XML_SMALLWIDTH" description="CONFIG_XML_DESC_SMALLWIDTH" />
+    <param name="smallheight" type="text" default=""
+      label="CONFIG_XML_SMALLHEIGHT" description="CONFIG_XML_DESC_SMALLHEIGHT" />
+    <param name="mediumwidth" type="text" default=""
+      label="CONFIG_XML_MEDIUMWIDTH" description="CONFIG_XML_DESC_MEDIUMWIDTH" />
+    <param name="mediumheight" type="text" default=""
+      label="CONFIG_XML_MEDIUMHEIGHT" description="CONFIG_XML_DESC_MEDIUMHEIGHT" />
+    <param name="largewidth" type="text" default=""
+      label="CONFIG_XML_LARGEWIDTH" description="CONFIG_XML_DESC_LARGEWIDTH" />
+    <param name="largeheight" type="text" default=""
+      label="CONFIG_XML_LARGEHEIGHT" description="CONFIG_XML_DESC_LARGEHEIGHT" />
+
+    <param name="show_page_stat" type="radio" default="0"
+      label="CONFIG_XML_SHOWSTATONPAGE" description="CONFIG_XML_DESC_SHOWSTATONPAGE">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="@spacer" type="spacer" default="" label=""
+      description="" />
+    <param name="show_page_title" menu="hide" type="radio" default="0"
+      label="CONFIG_XML_SHOWPAGETITLE" description="CONFIG_XML_DESC_SHOWPAGETITLE">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="show_title" type="radio" default="1"
+      label="CONFIG_XML_SHOWTITLE" description="CONFIG_XML_DESC_SHOWTITLE">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="link_titles" type="radio" default="1"
+      label="COMMON_LINKED_TITLES" description="COMMON_DESC_LINKED_TITLES">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="show_intro" type="radio" default="1"
+      label="COMMON_SHOW_INTRO" description="COMMON_DESC_SHOW_INTRO">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="@spacer" type="spacer" default="" label=""
+      description="" />
+    <param name="show_categories" type="radio" default="0"
+      label="COMMON_SHOW_CATEGORY" description="COMMON_DESC_SHOW_CATEGORY">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="link_categories" type="radio" default="0"
+      label="COMMON_SHOW_CATEGORY_LINK" description="COMMON_DESC_SHOW_CATEGORY_LINK">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="show_tags" type="radio" default="0" label="COMMON_SHOW_TAG"
+      description="COMMON_DESC_SHOW_TAG">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="link_tags" type="radio" default="0"
+      label="COMMON_SHOW_TAG_LINK" description="COMMON_DESC_SHOW_TAG_LINK">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="show_topics" type="radio" default="0"
+      label="COMMON_SHOW_TOPIC" description="COMMON_DESC_SHOW_TOPIC">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="link_topics" type="radio" default="0"
+      label="COMMON_SHOW_TOPIC_LINK" description="COMMON_DESC_SHOW_TOPIC_LINK">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="show_neighbourhoods" type="radio" default="0"
+      label="COMMON_SHOW_NEIGHBOURHOOD" description="COMMON_DESC_SHOW_NEIGHBOURHOOD">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="link_neighbourhoods" type="radio" default="0"
+      label="COMMON_SHOW_NEIGHBOURHOOD_LINK" description="COMMON_DESC_SHOW_NEIGHBOURHOOD_LINK">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+
+    <param name="@spacer" type="spacer" default="" label=""
+      description="" />
+    <param name="show_author" type="radio" default="1"
+      label="COMMON_SHOW_AUTHOR" description="COMMON_DESC_SHOW_AUTHOR">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="show_create_date" type="radio" default="0"
+      label="COMMON_SHOW_CREATE_DATE" description="COMMON_DESC_SHOW_CREATE_DATE">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="show_modify_date" type="radio" default="1"
+      label="COMMON_SHOW_MODIFIED_DATE" description="COMMON_DESC_SHOW_MODIFIED_DATE">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="show_article_date" type="radio" default="1"
+      label="COMMON_SHOW_ARTICLE_DATE" description="COMMON_DESC_SHOW_ARTICLE_DATE">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="show_map" type="radio" default="1" label="COMMON_MAP"
+      description="COMMON_DESC_MAP">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="map_utility" menu="hide" type="radio" default="google"
+      label="MAP_UTILITY" description="MAP_UTILITY_DESC">
+      <option value="google">Default Google Map</option>
+      <option value="onemap">OneMap</option>
+    </param>
+    <param name="onemap_api" menu="hide" type="text" label="ONEMAP_API"
+      description="ONEMAP_API_DESC"></param>
+    <param name="map_height" type="text" default="" label="COMMON_MAP_HEIGHT"
+      description="COMMON_DESC_MAP_HEIGHT">
+    </param>
+    <param name="map_width" type="text" default="" label="COMMON_MAP_WIDTH"
+      description="COMMON_DESC_MAP_WIDTH">
+    </param>
+    <param name="@spacer" type="spacer" default="" label=""
+      description="" />
+    <param name="show_icons" type="radio" default="1" label="COMMON_SHOW_ICON"
+      description="COMMON_DESC_SHOW_ICON">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="show_pdf_icon" type="radio" default="1"
+      label="COMMON_SHOW_PDF_ICON" description="COMMON_DESC_SHOW_PDF_ICON">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="show_print_icon" type="radio" default="1"
+      label="COMMON_SHOW_PRINT_ICON" description="COMMON_DESC_SHOW_PRINT_ICON">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="show_email_icon" type="radio" default="1"
+      label="COMMON_SHOW_EMAIL_ICON" description="COMMON_DESC_SHOW_EMAIL_ICON">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="@spacer" type="spacer" default="" label=""
+      description="" />
+    <param name="show_hits" type="radio" default="1" label="COMMON_SHOW_HITS"
+      description="COMMON_DESC_SHOW_HITS">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="show_readmore" type="radio" default="1"
+      label="COMMON_SHOW_READMORE" description="COMMON_DESC_SHOW_READMORE">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="show_vote" type="radio" default="0" label="COMMON_SHOW_VOTE"
+      description="COMMON_DESC_SHOW_VOTE">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="show_local_votes" type="radio" default="0"
+      label="COMMON_SHOW_LOCAL_VOTE" description="COMMON_DESC_SHOW_LOCAL_VOTE">
+      <option value="0">Disable</option>
+      <option value="1">Enable</option>
+    </param>
+    <param name="show_moodvote" type="radio" default="0"
+      label="COMMON_SHOW_MOOD_VOTE" description="COMMON_DESC_SHOW_MOOD_VOTE">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="@spacer" type="spacer" default="" label=""
+      description="" />
+    <param name="enable_comments" type="radio" default="1"
+      label="COMMON_ENABLE_COMMENTS" description="COMMON_DESC_ENABLE_COMMENTS">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="show_comment_count" type="radio" default="0"
+      label="COMMON_SHOW_COMMENT_COUNT" description="COMMON_DESC_SHOW_COMMENT_COUNT">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="enable_bbcode" type="radio" default="1"
+      label="CONFIG_XML_BBCODE" description="CONFIG_XML_DESC_BBCODE">
+      <option value="0">Disable</option>
+      <option value="1">Enable</option>
+    </param>
+    <param name="guestcomments" type="radio" default="1"
+      label="COMMON_GUEST_COMMENTS" description="COMMON_DESC_GUEST_COMMENTS">
+      <option value="0">Disable</option>
+      <option value="1">Allow</option>
+    </param>
+    <param name="enable_html" type="radio" default="0"
+      label="CONFIG_XML_HTML_COMMENT" description="CONFIG_XML_DESC_HTML_COMMENT">
+      <option value="0">Disallow</option>
+      <option value="1">Allow</option>
+    </param>
+    <param name="enable_subject" type="radio" default="0"
+      label="CONFIG_XML_COMMENT_SUBJECT" description="CONFIG_XML_DESC_COMMENT_SUBJECT">
+      <option value="0">Hide</option>
+      <option value="1">Show</option>
+    </param>
+    <param name="enable_gravatar" type="radio" default="1"
+      label="CONFIG_XML_GRAVATAR" description="CONFIG_XML_DESC_GRAVATAR">
+      <option value="0">Disallow</option>
+      <option value="1">Allow</option>
+    </param>
+    <param name="commentlimit" type="text" default=""
+      label="CONFIG_XML_COMMENT_DISPLAYED" description="CONFIG_XML_DESC_COMMENT_DISPLAYED">
+    </param>
+    <param name="order" type="list" default="created_desc"
+      label="CONFIG_XML_COMMENT_ORDERING" description="CONFIG_XML_DESC_COMMENT_ORDERING">
+      <option value="created_asc">CONFIG_XML_CREATED_DATE_OLDEST_FIRST</option>
+      <option value="created_desc">CONFIG_XML_CREATED_DATE_NEWEST_FIRST</option>
+    </param>
+    <param name="@spacer" type="spacer" default="" label=""
+      description="" />
+    <param name="enable_sharing" type="radio" default="1"
+      label="COMMON_ENABLE_SHARING" description="COMMON_DESC_ENABLE_SHARING">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="@spacer" type="spacer" default="" label=""
+      description="" />
+    <param name="poll_show_title" type="radio" default="1"
+      label="POLL_PARAMS_LABEL_SHOW_TITLE" description="POLL_PARAMS_DESC_SHOW_TITLE">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="poll_site_only" type="radio" default="0"
+      label="POLL_PARAMS_LABEL_LOCAL_VOTING" description="POLL_PARAMS_DESC_LOCAL_VOTING">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="poll_unvoted" type="radio" default="0"
+      label="POLL_PARAMS_LABEL_UNVOTED" description="POLL_PARAMS_DESC_UNVOTED">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="poll_delay" type="text" default=""
+      label="POLL_PARAMS_LABEL_DELAY_VOTING" description="POLL_PARAMS_DESC_DELAY_VOTING">
+    </param>
+    <param name="poll_require_login" type="radio" default="0"
+      label="POLL_PARAMS_LABEL_LOGIN" description="POLL_PARAMS_DESC_LOGIN">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+
+    <param name="@spacer" type="spacer" menu="hide" default="Debug settings (Hub and Spokes)"
+      label="" description="" />
+    <param name="disableSOAPCache" type="radio" menu="hide" default="1"
+      label="CONFIG_XML_DISABLESOAPCACHE" description="CONFIG_XML_DESC_DISABLESOAPCACHE">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+
+  </params>
+</config>

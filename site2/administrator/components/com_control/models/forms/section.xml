@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: section.xml 996 2008-10-03 01:58:40Z eddieajau $ -->
+<form>
+	<fields>
+		<field
+			name="id"
+			type="text"
+			id="id"
+			class="readonly"
+			label="JX ID"
+			size="10"
+			default="0"
+			required="true"
+			readonly="true" />
+		<field
+			name="name"
+			type="text"
+			id="name"
+			class="inputbox"
+			label="JX Section Name"
+			size="30"
+			default=""
+			description="A free text name for this item" />
+		<field
+			name="value"
+			type="text"
+			id="value"
+			class="inputbox"
+			label="JX Section Value"
+			size="30"
+			description="The programmatic value use to refer to this item" />
+		<field
+			name="order_value"
+			type="text"
+			id="order_value"
+			class="inputbox"
+			label="JX Order"
+			size="6"
+			default="0" />
+		<field
+			name="hidden"
+			type="radio"
+			id="hidden"
+			class="inputbox"
+			label="JX Hidden"
+			size="6"
+			default="0">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+	</fields>
+</form>

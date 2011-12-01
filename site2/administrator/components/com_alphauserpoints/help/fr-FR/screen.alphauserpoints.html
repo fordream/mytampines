@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US" xml:lang="en_US">
+<head>
+<title>Aide</title>
+<link href="css/help.css" rel="stylesheet" type="text/css" />
+<meta name="copyright" content="Copyright (C) 2008 Bernard Gilly. All rights reserved." />
+<meta name="license" content="http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL" />
+<style type="text/css">
+<!--
+.Style3 {font-size: 14px}
+.Style4 {
+	font-size: 14px;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<body>
+<h1>AlphaUserPoints - Aide </h1>
+
+<p><strong>Pr&eacute;sentation:</strong> AlphaUserPoints est un composant qui permet de  distribuer des points aux utilisateurs enregistr&eacute;s selon certaines de ses actions. AlphaUserPoints poss&egrave;de son propre composant d'invitation/recommendation qui peut &ecirc;tre utilis&eacute; &eacute;galement par les utilisateurs non-enregistr&eacute;s.</p>
+<p><strong>Licence:</strong> AlphaUserPoints  est r&eacute;alis&eacute; sous licence <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU/GPL License</a>.</p>
+<p><strong>Installation : </strong>Installer le composant via l'interface d'administration de Joomla. Lors de l'installation, les plugins syst&egrave;mes s'installent et sont publi&eacute;s automatiquement. Si toutefois le r&eacute;pertoire Plugins n'a pas les droits en &eacute;criture, une erreur survient et averti l'utilisateur. Le composant devra &ecirc;tre r&eacute;install&eacute; apr&egrave;s modification des droits sur le r&eacute;pertoire Plugins.</p>
+<p><b>Mise &agrave; jour:</b> Toutes les r&egrave;gles customis&eacute;es sont conserv&eacute;es ainsi que les points des utilisateurs. <b>Pas besoin de d&eacute;sinstaller la version pr&eacute;c&eacute;dente</b>. Installer directement la derni&egrave;re version par dessus la pr&eacute;c&eacute;dente, puis allez au panneau d'administration d'AlphaUserPoints, v&eacute;rifier et enregistrer la configuration g&eacute;n&eacute;rale s'il y a des nouveaux param&egrave;tres.<br />
+Si vous souhaitez d&eacute;sinstaller la version pr&eacute;c&eacute;dente avant, il suffit de d&eacute;sinstaller et installer la derni&egrave;re version, puis allez au panneau d'admin, v&eacute;rifier et enregistrer la configuration g&eacute;n&eacute;rale. Aller au gestionnaire de menus et modifier chaque menu li&eacute; &agrave; AlphaUserPoints et appliquer les param&egrave;tres.</p>
+<p><strong>Panneau de contr&ocirc;le g&eacute;n&eacute;ral de Joomla : </strong><br />
+  <br />
+Lors de l'installation d'AlphaUserPoints, une ic&ocirc;ne est ajout&eacute;e dans le panneau de contr&ocirc;le de joomla (mod_aupadmin). Cette ic&ocirc;ne vous permet de lancer rapidement  AlphaUserPoints mais affiche aussi un avertissement si il existe  des points en attente d'approbation.</p>
+<p><strong>Panneau de contr&ocirc;le  :</strong></p>
+<p> <i>Bouton/menu <b>Configuration</b></i><br />
+Ce menu permet de param&eacute;trer des options de base pour l'utilisation du composant.</p>
+<p><i>Bouton/menu <b>R&egrave;gles</b></i><br />
+  Ce menu permet d'acc&eacute;der &agrave; la liste des r&egrave;gles permettant d'attribuer des points selon certaines actions de l'utilisateur enregistr&eacute;. Les descriptions des r&egrave;gles vous donneront les informations sur leur r&ocirc;le et les conditions d'attribution des points. Pour installer de nouvelles r&egrave;gles inter-agissant avec des composants tiers, se reporter &agrave; la rubrique <a href="#advanced">Pour aller plus loin</a>.</p>
+<p><i>Bouton/menu <b>Utilisateurs</b></i><br />
+  Ce menu affiche l'ensemble des membres enregistr&eacute;s du site avec leurs identifiants AlphaUserPoint respectifs, le total de points actuel pour chacun des membres ainsi qu'un lien pour le d&eacute;tails de chaque action ayant rapport&eacute;e des points.</p>
+<p><i>Bouton/menu <b>Plugins</b></i><br />
+  Ce menu permet d'ajouter des nouvelles r&egrave;gles inter-agissant avec des composants tiers. Pour plus de renseignements sur ce menu, se reporter &agrave; la rubrique <a href="#advanced">Pour aller plus loin</a>.</p>
+<p><i>Bouton/menu <b>Synchro utilisateurs</b></i><br />
+  Ce menu permet, apr&egrave;s la premiere installation, de synchroniser l'ensembre des membres d&eacute;j&agrave; enregistr&eacute;s sur le site afin de leurs attribuer un identifiant AlphaUSerPoints. Avant de synchroniser les utilisateurs, veuillez lire la rubrique <a href="#first">Mise en route</a>.</p>
+<p><i>Bouton/menu <b>Recalculer</b></i><br />
+  Ce menu permet de lance un recalcul du nombre total de points pour tous les membres suite &agrave; suppression d'action ou modification de points par un administrateur. Attention: ceci recalcul tous les utilisateurs selon les actions men&eacute;es. Si vous avez modifi&eacute; manuellement un compte, vous perdrez ces modifications. </p>
+<p><i>Bouton/menu <b>Remise &agrave; z&eacute;ro</b></i><br />
+  Ce menu remet tous les compteurs de points &agrave; z&eacute;ro pour l'ensemble des membres enregistr&eacute;s. Important: impossibilit&eacute; de revenir en arri&egrave;re, toutes les actions seront effac&eacute;es. </p>
+<p><i>Bouton/menu <b>Points maxi</b></i><br />
+  Ce menu fixe une limite maximum de points pouvant &ecirc;tre attribu&eacute;s &agrave; tous les membres enregistr&eacute;s du site. 0 ou vide pour ne pas fixer de limite.<br />
+  <br />
+  <i>Bouton/menu<b> Purger points expir&eacute;s</b></i><br />
+Ce menu permet de purger les actions poss&eacute;dant une date limite de validit&eacute;. Cette action entra&icirc;ne un recalcul imm&eacute;diat de tous les points.</p>
+<p><i>Bouton/menu <b>Codes coupon</b></i><br />
+Ce menu permet de cr&eacute;er des codes pour des coupons donnant droit &agrave; des points suppl&eacute;mentaires. G&eacute;n&eacute;rateur de codes int&eacute;gr&eacute;.</p>
+<p><i>Button / menu <b>Tirage au sort</b> </i><br />
+Ce menu permet de cr&eacute;er des tirages au sort, loterie ou promotions... pour vos utilisateurs. 1 &agrave; 3 gagnants &agrave; chaque tirage. </p>
+<p><i>Button / menu <b>Niveau/Rang</b></i><br />
+Ce menu permet de cr&eacute;er des rangs ainsi que des m&eacute;dailles pour vos utilisateurs. Les deux types peuvent &ecirc;tre combin&eacute;s.</p>
+<p><i>Bouton/menu <b>Statistiques</b> </i><br />
+Ce menu affiche le top 10 des points gagn&eacute;s et le top 10 des points d&eacute;pens&eacute;s par vos utilisateurs. Possibilit&eacute; de filtrer de date &agrave; date.</p>
+<p><i>Bouton/menu <b>Export membres actifs (CSV)</b></i><br />
+Ce menu lance un export au format CSV des cinquantes premier membres les plus actifs (ayant le plus de points) du site. </p>
+<p><i>Bouton/Menu<b> Export emails (CSV)</b></i><br />
+  Ce menu lance un export au format CSV de toutes les adresses email stock&eacute;es dans la table d&eacute;tails du composant suite &agrave; une action du type invitation/recommendation, recommender un article etc...</p>
+<p><i>Button / Menu <strong>Activit&eacute;s combin&eacute;es </strong></i><br />
+Ce menu permet de condenser l'ensemble des activit&eacute;s en une seule activit&eacute; ant&eacute;rieurement &agrave; une date donn&eacute;e. Am&eacute;liore les performances de la base de donn&eacute;es si votre site g&eacute;n&egrave;re une grand activit&eacute; de la part des utilisateurs. </p>
+<p>  <i>Bouton/menu <b>A propos de</b></i><br />
+  Informations sur le composant.<br />
+  <br />
+  <i>Bouton/menu <b>Comment cr&eacute;er un plugin</b></i><br />
+  Ce menu affiche un fichier d'aide expliquant comment int&eacute;grer l'API AlphaUserPoints dans un composant tier et comment g&eacute;n&eacute;rer un fichier XML d'installationde la nouvelle r&egrave;gle concernant ce composant tier.</p>
+<p><i>Bouton/menu <b>Aide</b></i><br />
+  Affiche ce fichier.
+  <br /> 
+</p>
+<p><strong><a name="first" id="first"></a>Mise en route :</strong></p>
+<p><strong><span class="Style3">Param&eacute;trage des r&egrave;gles pr&eacute;-existantes </span><br />
+</strong>Via l'interface d'administration de Joomla!, cliquez sur le menu <i>composants</i> puis sur le menu AlphaUserPoints. Cliquez ensuite sur le sous-menu <i>r&egrave;gles</i> ou bien cliquez sur le bouton <i>r&egrave;gles</i> si vous &ecirc;tes d&eacute;j&agrave; dans le panneau de contr&ocirc;le du composant AlphaUserPoints.</p>
+<p>Lorsque vous lancer le composant pour la premi&egrave;re fois, un message d'information appara&icirc;t dans le panneau de contr&ocirc;le du composant. Ce message vous informe que vous devez dans un premier temps synchroniser les utilisateurs/membres enregistr&eacute;s de votre site avec  AlphaUserPoints. Toutefois, si vous souhaitez attribuer des points &agrave; chaque enregistrement d'un nouvel utilisateur, et pour ne pas p&eacute;naliser les anciens membres, vous devez param&eacute;trer la r&egrave;gle concernant les nouveaux membres avant d'effectuer la synchronisation. Editez cette r&egrave;gle et attribuez un nombre de points pour tout nouveau membre. Sauvegarder cette r&egrave;gle. Vous &ecirc;tes &agrave; m&ecirc;me maintenant de synchroniser tous les membres. Ceux-ci seront cr&eacute;dit&eacute; des points. D&egrave;s qu'un nouveau membre s'inscrira, il sera cr&eacute;dit&eacute; du nombre de points sp&eacute;cifi&eacute;s dans la r&egrave;gle. <br />
+Param&eacute;trez et activez les autres r&egrave;gles selon vos besoins. Les descriptions des r&egrave;gles vous donneront les informations sur leur r&ocirc;le et les conditions d'attribution des points.<br />
+<i>Note : la r&egrave;gle concernant les nouveaux utilisateurs ne peut pas &ecirc;tre d&eacute;sactiv&eacute;e. Vous pouvez uniquement mettre &agrave; z&eacute;ro le nombre de points attribu&eacute;s &agrave; cette r&egrave;gle si vous ne souhaiter pas attribuer de point sur cette action.</i></p>
+<ol>
+  <li>R&egrave;gle <b><i>Nouvel utilisateur</i></b> : Attribue ou non des points pour tout nouvel utilisateur enregistr&eacute; sur le site.</li>
+  <li>R&egrave;gle <b><i>Connexion journali&egrave;re</i></b>: Attribue des points pour une connexion journali&egrave;re. (fid&eacute;lise vos visiteurs).</li>
+  <li>R&egrave;gle <b><i>Parrainage</i></b> : Attribue ou non des points lorsqu'un utilisateur invite une personne &agrave; s'enregistrer sur le site (envoi d'email).</li>
+  <li>R&egrave;gle <b><i>Invitation avec confirmation</i></b> : Attribue ou non des points au parrain lorsqu'un utilisateur s'enregistre sur le site suite &agrave; une invitation.</li>
+  <li>R&egrave;gle <b><i>Envoyer un article</i></b> : Attribue ou non des points &agrave; l'utilisateur lorsque celui-ci soumet un article.</li>
+  <li>R&egrave;gle <b><i>Soumettre un lien web</i></b> : Attribue ou non des points &agrave; l'utilisateur lorsque celui-ci soumet un lien web.</li>
+  <li>R&egrave;gle <b><i>Inviter un ami &agrave; lire un article</i></b> : Attribue des points lorsqu'un membre invite un ami &agrave; lire un article (gagne de points lorsque l'article est lu) . Utilisation de la fonction native envoyer &agrave; un ami inclue dans Joomla.</li>
+  <li>R&egrave;gle <b><i>Lecteur &agrave; auteur</i></b> : Assigne des points &agrave; l'auteur quand l'un de ses articles est lu par un utilisateur.</li>
+  <li>R&egrave;gle <b><i>Lire un article</i></b>: Assigne des points lorsque l'utilisateur enregistr&eacute; lit un article. Vous pouvez assigner un montant de points n&eacute;gatif pour transformer cette r&egrave;gle en <i>Payer pour lire</i>. Les points sont attribu&eacute;s ou retir&eacute;s uniquement lors de la premi&egrave;re lecture. </li>
+  <li>R&egrave;gle <b><i>Voter un article</i></b>: Assigne des points lorsque l'utilisateur enregistr&eacute; vote pour un article avec le syst&egrave;me de vote de Joomla.</li>
+  <li>Rule<b><i> Click sur banni&egrave;re</i></b>: Assigne des points lorsque l'utilisateur enregistr&eacute; clique sur une banni&egrave;re du composant com_banners (Seul le premier click est comptabilis&eacute; pour l'obtention de points).</li>
+  <li> R&egrave;gle<b> <i>R&eacute;pondre au sondage </i></b>: Attribue ou non des points &agrave; l'utilisateur lorsque celui-ci participe &agrave; un sondage. </li>
+  <li>R&egrave;gle <b><i>Cession de points</i></b> : Autorise les utilisateurs &agrave; c&eacute;der tout ou partie de leurs points &agrave; d'autres utilisateurs. N&eacute;cessite de cr&eacute;er un menu li&eacute; au compoant pour le frontend.</li>
+  <li>R&egrave;gle <b><i>Points au parrain</i></b> : Les utilisateurs parrains gagnent des points de bonus en pourcentage sur tous les points gagn&eacute;s par leurs filleuls.</li>
+  <li>R&egrave;gle <b><i>Points de bonus </i></b>: Assigne des points de bonus &agrave; certains utilisateurs s&eacute;lectionn&eacute;s (Administration -&gt; AlphaUserPoints -&gt; menu Statistiques -&gt; barre outils Bonus).</li>
+  <li>R&egrave;gle<b><i> Devenir auteur</i></b>: Sp&eacute;cifier le nombre de points n&eacute;cessaires  pour autoriser un utilisateur enrgistr&eacute; &agrave; changer de niveau et devenir auteur.</li>
+  <li>R&egrave;gle<b><i> Devenir r&eacute;dacteur </i></b>: Sp&eacute;cifier le nombre de points n&eacute;cessaires pour autoriser un auteur &agrave; changer de niveau et devenir r&eacute;dacteur.</li>
+  <li>R&egrave;gle<b><i> Devenir &eacute;diteur </i></b>: Sp&eacute;cifier le nombre de points n&eacute;cessaires pour autoriser un &eacute;diteur &agrave; changer de niveau et devenir &eacute;diteur.</li>
+  <li>R&egrave;gle <b><i>Exclusion d'utilisateurs r&eacute;f&eacute;rants</i></b> : Exclus certains r&eacute;f&eacute;rants pour l'attribution de points (utile pour les administrateurs).</li>
+  <li>R&egrave;gle <b><i>Notification email</i></b> : Envoi un email &agrave; l'utilisateur d&egrave;s qu'il gagne des points.</li>
+  <li>R&egrave;gle <b><i>Notification au gagnant</i></b> : Envoi un email &agrave; l'utilisateur  d&egrave;s que celui-ci  a atteint le maximum de points requis (n&eacute;cessite de param&eacute;ter un maximum de points).</li>
+  <li>R&egrave;gle <b><i>Acheter des points</i> avec Paypal</b> : Autorise les utilisateurs &agrave; acheter des points sur votre site avec Paypal. Requis: Param&eacute;trer le menu.</li>
+  <li>R&egrave;gle <b><i>Codes pour des coupon de points</i></b>: Autorise les utilisateurs &agrave; entrer un code dans le module appropri&eacute; pour obtenir des points d&eacute;termin&eacute;s par l'administrateur. Vous devez installer le module <i>mod_alphauserpoints_couponcode</i>.</li>
+  <li>R&egrave;gle <b><i>Tirage au sort</i></b>: Cette r&egrave;gle permet l'utilisation du syst&egrave;me de tirage au sort.</li>
+  <li>R&egrave;gle <b><i>Custom</i></b>: Assigne ou retire un nombre de points customisables pour un ou des utilisateurs sp&eacute;cifiques (Administration -&gt; menu Utilisateurs -&gt; d&eacute;tails -&gt; barre outils -&gt; Bouton Custom points)</li>
+  <li>R&egrave;gle <strong><em>Joyeux anniversaire</em></strong>: Assigne des points une fois par an quand la date d'anniversaire de l'utilisateur est atteinte. Note: l'utilisateur doit se logger ce jour l&agrave; pour obtenir les points.</li>
+  <li>R&egrave;gle <strong><em>Contenu</em></strong> : Assigne ou retire des points sur n'importe quelle affichage de contenu (com_content ou n'importe quel autre composant chargeant le &quot;content plugin onPrepareContent&quot; de Joomla!). Ajouter juste le tag <strong>{AUP::CONTENT=XXX}</strong> dans votre contenu ou XXX repr&eacute;sente le nombre de points, vous pouvez entrer une valeur positive ou n&eacute;gative.</li>
+  <li>R&egrave;gle <strong><em>Upload avatar </em></strong>: Assigne des points lors d'un upload d'avatar ou photo dans le profil de l'utilisateur. Fonctionne uniquement avec le syst&egrave;me natif d'avatar inclus dans AlphaUserPoints.</li>
+  <li>R&egrave;gle <strong><em>Profil complet </em></strong>: Assigne des points lorsque le profil de l'utilisateur est compl&eacute;t&eacute; &agrave; 100%. 10% lors de l'inscription sur le site, 50% avec un avatar, 100% avec la date de naissance, le genre, le lieu de r&eacute;sidence et les infos d'&eacute;ducation et de travail. Si le profil r&eacute;gresse en dessous de 100%, les points seront retir&eacute;s automatiquement.</li>
+  <li>R&egrave;gle <i><b>Membre inactif </b></i> : Retire des points pour les membres inactifs apr&egrave;s une  p&eacute;riode pr&eacute;-&eacute;tablie.</li>
+  <li>R&egrave;gle <i><b>Activit&eacute;s combin&eacute;es</b></i>: Permet &agrave; l'administrateur du site de combiner l'ensemble des activit&eacute;s en une seule activit&eacute; ant&eacute;rieurement &agrave; une date donn&eacute;e. Am&eacute;liore les performances de la base de donn&eacute;es si votre site g&eacute;n&egrave;re une grand activit&eacute; journali&egrave;re de la part des utilisateurs.</li>
+  <li>Rule <em><strong>Donner des points &agrave; l'auteur</strong></em>: Le lecteur donne des points &agrave; l'auteur pour pouvoir lire son article avec possibilit&eacute; de customiser le montant des points. Ajouter le tag <strong>{AUP::CONTENTAUTHOR=XXX} </strong>dans votre article  ou XXX est le nombre de points. Ce nombre est toujours positif. Le montant des points sera retirer du compte du lecteur et les points seront attribu&eacute;s &agrave; l'auteur de l'article. </li>
+</ol>
+<p>Il existe aussi 2 r&egrave;gles auto-d&eacute;tect&eacute;es si le composant Kunena forum est isntall&eacute; sur le site. Une r&egrave;gle pour assigner des points lors de la cr&eacute;ation d'un nouveau topic and une r&egrave;gle pour l'assignation de points sur une r&eacute;ponse &agrave; un topic. Il y a lieu d'activer cette int&eacute;gration dans le param&eacute;trage du composant Kunena forum. </p>
+<p><span class="Style4">Cr&eacute;ation des menus</span><br />
+AlphaUserPoints comporte 8 options de cr&eacute;ation de menu en frontend.</p>
+<ul>
+  <li> Un menu pour afficher le compte/profil de l'utilisateur connect&eacute;. Affiche le nombre total de points courant, les actions, les m&eacute;dailles et statistiquues. Ce menu devra &ecirc;tre principalement utilis&eacute; en ad&eacute;quation avec le menu utilisateur. </li>
+  <li>Un menu pour afficher la liste compl&egrave;te des membres enregistr&eacute;s avec leur total de points et leur identifiant AlphaUserPoints. </li>
+  <li> Un menu permettant &agrave; l'utilisateur enregistr&eacute; de c&eacute;der des points &agrave; d'autres utilisateurs. Possibilit&eacute; de limiter le nombre de points et seulement utilisable une  fois par jour. Ce menu devra aussi &ecirc;tre principalement utilis&eacute; en ad&eacute;quation avec le menu utilisateur et la r&egrave;gle concernant la cession de points &agrave; d'autres utilisateurs devra &ecirc;tre &eacute;galement activ&eacute;e.</li>
+  <li> Un menu pour lancer l'outil d'invitation/recommendation. Ce dernier peut-&ecirc;tre utilis&eacute; aussi par les invit&eacute;s (non-membres donc pas de points!). Ce menu poss&egrave;de plusieurs param&eacute;tres particuliers pour la s&eacute;curit&eacute; (anti-spam) et l'importation d'adresses emails (int&eacute;gration du widget Plaxo address book ou  OpenInviter). IMPORTANT: l'utilisation de l'option OpenInviter  requiert l'installation du composant <a href="http://openinviter.com/" target="_blank">com_openinviter</a>.</li>
+  <li>Un menu autorisant les utilisateurs enregistr&eacute;s &agrave; acheter des points avec Paypal. Ce menu offre plusieurs param&egrave;tres pour param&eacute;trer le compte Paypal &agrave; utiliser et le nombre de points pouvant &ecirc;tre achet&eacute;s.  Si vous n'avez pas de compte Paypal, vous pouvez en obtenir un rapidement  en vous inscrivant &agrave; <a href="http://www.paypal.com">www.paypal.com</a>. Si vous avez votre compte, vous devez param&eacute;trer correctement votre profil Paypal pour qu'il fonctionne avec l'option d'achat de points inclus dans AlphaUserPoints. Connectez-vous &agrave; votre compte et modifiez votre profil. Allez dans le menu Pr&eacute;f&eacute;rences des ventes et cliquez sur le site Pr&eacute;f&eacute;rences de r&eacute;ception de paiements sur le site. Activez le renvoi automatique ce qui permet de revenir &agrave; votre site Web apr&egrave;s le paiement et de confirmer ce paiement afin d'attribuer les points &agrave; l'utilisateur. Vous devez entrer une URL de renvoi. Vous pouvez entrer n'importe quelle URL valide, AlphaUserPoints remplacera automatiquement ce param&egrave;tre (entrez par exemple: http://www.exemple.com). Activez le transfert des donn&eacute;es de paiement, AlphaUserPoints en a besoin pour v&eacute;rifier les transactions et les activer. Enregistrez votre profil. Vous recevrez un message qui vous indique votre jeton d'identit&eacute; (token en anglais) . Vous pouvez r&eacute;cup&eacute;rer ce jeton si vous retournez sur Pr&eacute;f&eacute;rences de r&eacute;ception de paiements sur le site.</li>
+  <li>Un menu pour lister les m&eacute;dailles existantes et attribu&eacute;es.</li>
+  <li>Un menu pour afficher le fil RSS del'activit&eacute; la plus r&eacute;cente</li>
+  <li>Un menu pour afficher l'activit&eacute; la plus r&eacute;cente sous forme de liste avec pagination  </li>
+</ul>
+<p><b class="Style4">ReCaptcha</b><br />
+Pour l'utilisation de ReCaptcha (anti-spam), vous devez au pr&eacute;alable obtenir des cl&eacute;s pour son utilisation sur le site <a href="http://recaptcha.net/api/getkey" target="_blank">http://recaptcha.net/api/getkey</a>.</p>
+<p>Pour cr&eacute;er un menu, s&eacute;lectionnez le composant AlphaUserPoints dans l'interface de cr&eacute;ation de menus de Joomla!  puis choisissez le type de menu &agrave; cr&eacute;er. Entrez un nom pour ce menu puis param&eacute;trer le si besoin. Pour plus d'information sur la cr&eacute;ation de menu sous Joomla!, reportez vous &agrave; l'aide de Joomla!. </p>
+<p><b class="Style4">D&eacute;sactiver les messages utilisateur en frontend </b><br /> 
+Utilisez le menu Configuration puis activez ou d&eacute;sactivez les messages de congratulations ou de retrait de points en frontend de votre site.</p>
+<p><b class="Style4">Autoriser les visiteurs &agrave; voir le profil des membres</b><br />
+Vous pouvez activer ou d&eacute;sactiver l'option afin que les visiteurs voient ou ne voient pas le profil des membres inscrits.</p>
+<p><b class="Style4">Changer le pr&eacute;fixe de l'identifiant</b><br />
+Vous pouvez modifier le pr&eacute;fixe de l'identifiant AlphaUserPoints en &eacute;ditant les param&egrave;tres du menu Configuration. Vous pouvez entrer un pr&eacute;fixe particulier pour les utilisateurs qui s'enregistrent d'eux-m&ecirc;me sur votre site et un autre pour les utilisateurs &quot;parrain&eacute;s&quot;. 7 caract&egrave;res maximum.</p>
+<p><b class="Style4">Modifier le type d'identifiant</b><br />
+Vous pouvez modifier le pr&eacute;fixe de l'identifiant AlphaUserPoints en &eacute;ditant les param&egrave;tres du menu Configuration. Vous pouvez choisir entre le username de l'utilisateur ou bien une s&eacute;quence al&eacute;atoire. </p>
+<p><b class="Style4">Limiter le nombre de points par jour: </b><br />
+Vous pouvez limiter le nombre de points acquis par jour par vos utlisateurs en &eacute;ditant les param&egrave;tres du menu Configuration.</p>
+<p><b class="Style4">Syst&egrave;me de tirage au sort:<br />
+  </b><b>Premi&egrave;re &eacute;tape</b> : Si vous souhaitez offrir &agrave; vos utilisateurs enregistr&eacute;s la possibilit&eacute; de participer &agrave; des tirages au sort vous devez d'abord activer la r&egrave;gle &quot;Tirage au sort&quot; puis ajouter un tirage au sort &agrave; l'aide du bouton &quot;Tirage au sort&quot; dans le panneau de contr&ocirc;le d'AlphaUserPoints et param&eacute;trez ensuite ce tirage. Vous pouvez choisir d'offrir des points, des coupons code aux gagnants des tirages ou bien un email avec un lien pour un t&eacute;l&eacute;chargement par exemple.<br />
+  <b>Deuxi&egrave;me &eacute;tape</b> (optionnelle): Si vous avez un tirage qui requiert une inscription de la part de vos utilisateurs enregistr&eacute;s, il suffit d'ins&eacute;rer le tag suivant dans un article: <b>{AUP::RAFFLE=ID}</b> o&ugrave; ID est l'ID de votre tirage au sort. Ce tag fait appara&icirc;tre un bouton pour l'inscription de vos utilisateurs. L'article, lui, peut d&eacute;crire le tirage au sort, le jeu ou la promotion relatif &agrave; ce tirage.<br />
+Maintenant, dans la partie administration du composant, rubrique Tirage au sort, vous avez le nombre total de participants inscrits pour ce tirage. Si vous cliquez sur ce nombre, vous obtenez la liste compl&egrave;te des participants inscrits au format csv.<br />
+Si l'inscription multiple est autoris&eacute;e alors un membre enregistr&eacute; pourra alors s'inscrire plusieurs fois &agrave; un tirage, ceci augmentant ses chances de gagner tel qu'&agrave; un tirage de loterie avec des billets.</p>
+<p><b class="Style4">Niveaux/Rangs et m&eacute;dailles</b><br />
+Les deux peuvent &ecirc;tre utilis&eacute;s ensemble ou individuellement. Grades ou des m&eacute;dailles peuvent &ecirc;tre accord&eacute;es automatiquement quand un utilisateur atteind un certain nombre de points (sp&eacute;cifiez le nombre de points dans le rang/m&eacute;daille) ou peut &ecirc;tre attribu&eacute;e manuellement &agrave; un utilisateur (laissez le nombre de points &agrave; z&eacute;ro). Dans tous les cas, le rang ou la m&eacute;daille peut &ecirc;tre modifi&eacute; manuellement par l'administrateur directement dans le d&eacute;tail de l'utilisateur. <span id="result_box" class="long_text"><span style="background-color: 
+rgb(255, 255, 255);" title="If you assign a rank that is normally 
+intended to be assigned automatically to a certain level of points, it 
+will not be taken into account.">Si vous attribuez un rang qui est normalement destin&eacute;e &agrave; &ecirc;tre attribu&eacute; automatiquement &agrave; un certain niveau de points, il ne sera pas pris en compte. </span><span 
+style="background-color: rgb(255, 255, 255);" title="It is recommended 
+not to mix the two types of rank (automatic or manual).">Il est recommand&eacute; de ne pas m&eacute;langer les deux types de classement (automatique ou manuelle).</span></span></p>
+<p>Lorsque vous attribuez une m&eacute;daille &agrave; un utilisateur, vous pouvez ajouter une description ou une raison pour l'attribution de cette m&eacute;daille. Si vous laissez le champ vide, la description par d&eacute;faut de la m&eacute;daille est attribu&eacute;e. Les grades et les m&eacute;dailles par d&eacute;faut cr&eacute;&eacute;s pendant l'installation du composant peuvent &ecirc;tre supprim&eacute;s sans probl&egrave;me si vous ne les utilisez pas. S'il n'y a pas de rang/m&eacute;daille, les colonnes pour afficher les ic&ocirc;nes ou le nombre de m&eacute;dailles ne seront pas affich&eacute;es dans la gestion des utilisateurs.</p>
+<p><b class="Style4">Afficher le total de  points pour l'utilisateur connect&eacute; dans un article : </b><br />
+Utilisez le tag {AUP::SHOWPOINTS} dans le contenu de votre article &agrave; l'endroit d&eacute;sir&eacute; pour afficher le total en cours de l'utilisateur connect&eacute;.</p>
+<p><b class="Style4">V&eacute;rification de version </b><br />
+Vous pouvez afficher / cacher le contr&ocirc;le de version dans le menu Configuration g&eacute;n&eacute;rale du composant. </p>
+<p><strong><a name="advanced" id="advanced"></a>Pour allez plus loin  :</strong></p>
+<p><span class="Style4">Installation de plugins tiers</span><br />
+Pour ajouter de nouvelles r&egrave;gles provenant ou inter-agissant avec des composants tiers, cliquez sur le menu <i>Plugins</i> ou sur le bouton du panneau de contr&ocirc;le du composant, puis s&eacute;lectionnez le fichier<i> .zip</i> ou <i>.xml</i> contenant la nouvelle r&egrave;gle. Uploadez ce fichier. Si le fichier est upload&eacute; correctement, une nouvelle r&egrave;gle sera ajouter &agrave; la liste existante. Param&eacute;trez cette nouvelle r&egrave;gle et activez l&agrave; selon vos besoins. Le fait de cliquez sur <i>Nouveau</i> dans la liste des r&egrave;gles permet &eacute;galement d'ajouter un plugin via la m&ecirc;me fonction.</p>
+<p>Si vous souhaitez avoir plus de renseignement sur la fa&ccedil;on de cr&eacute;er un plugin, reportez-vous sur l'aide &quot;<a href="screen.how_create_plugin.html">Comment cr&eacute;er un plugin</a>&quot;.</p>
+</body>
+</html>

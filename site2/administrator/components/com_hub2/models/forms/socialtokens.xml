@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- siteparams.xml $Id: $ -->
+<form>
+	<fields>
+		<field name="site_id" type="list_sitelist" id="name" class="inputbox validate required"
+			label="ADMIN_SOCIALTOKEN_XML_SITE_ID"
+			default=""
+			description="ADMIN_SOCIALTOKEN_XML_SITE_ID_DESC"
+			required="true">
+		</field>
+		<field name="url" type="textarea" id="url" class="inputbox required validate-url @lbl"
+		    label="ADMIN_SOCIALTOKEN_XML_URL"
+		    rows="3" cols="50"
+		    default=""
+		    description="ADMIN_SOCIALTOKEN_XML_URL_DESC" required="true">
+		</field>
+	</fields>
+    <fields group="facebook">
+        <field name="metadata" type="text" id="metadata" class="inputbox required validate @lbl"
+		    label="ADMIN_SOCIALTOKEN_XML_METADATA"
+			size="52"
+		    default=""
+		    description="ADMIN_SOCIALTOKEN_XML_METADATA_DESC"
+		    required="true">
+		</field>
+    </fields>
+    <fields group="twitter">
+        <field name="access_token" type="text" id="metadata" class="inputbox required validate @lbl"
+		    label="ADMIN_TWITTER_XML_ACCESS_TOKEN"
+			size="52"
+		    default=""
+		    description="ADMIN_TWITTER_XML_ACCESS_TOKEN_DESC"
+		    required="true">
+		</field>
+		<field name="access_token_secret" type="text" id="metadata" class="inputbox required validate @lbl"
+		    label="ADMIN_TWITTER_XML_ACCESS_TOKEN_SECRET"
+			size="52"
+		    default=""
+		    description="ADMIN_TWITTER_XML_ACCESS_TOKEN_SECRET_DESC"
+		    required="true">
+		</field>
+		<field name="consumer_key" type="text" id="metadata" class="inputbox required validate @lbl"
+		    label="ADMIN_TWITTER_XML_CONSUMER_KEY"
+			size="52"
+		    default=""
+		    description="ADMIN_TWITTER_XML_CONSUMER_KEY_DESC"
+		    required="true">
+		</field>
+		<field name="consumer_secret" type="text" id="metadata" class="inputbox required validate @lbl"
+		    label="ADMIN_TWITTER_XML_CONSUMER_SECRET"
+			size="52"
+		    default=""
+		    description="ADMIN_TWITTER_XML_CONSUMER_SECRET_DESC"
+		    required="true">
+		</field>
+    </fields>
+</form>

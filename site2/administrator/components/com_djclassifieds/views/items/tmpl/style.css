@@ -1,0 +1,36 @@
+#mod_dj_classifieds .level0 a{
+color:#666666;
+}
+
+#mod_dj_classifieds .level1 a{
+color:#666666;
+padding-left:10px;
+}
+
+#mod_dj_classifieds .level2 a{
+color:#666666;
+padding-left:20px;
+}
+
+#mod_dj_classifieds .level3 a{
+color:#666666;
+padding-left:30px;
+}
+
+#mod_dj_classifieds .level4 a{
+color:#666666;
+padding-left:40px;
+}
+
+#mod_dj_classifieds .level5 a{
+color:#666666;
+padding-left:50px;
+}
+#mod_dj_classifieds ul{
+	padding-left:0px;
+	list-style:none;
+}
+.intro_desc p{
+	padding:0px;
+	margin:0px;
+}

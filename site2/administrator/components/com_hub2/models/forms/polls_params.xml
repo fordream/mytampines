@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields>
+        <field name="params" type="hub2registry" default="" id="params" class="inputbox @lbl" label="POLLPARAMS">
+            <param name="poll_show_title" type="radio" default="" label="POLL_PARAMS_LABEL_SHOW_TITLE" description="POLL_PARAMS_DESC_SHOW_TITLE">
+                <option value="">Use Global</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </param>
+            <param name="poll_site_only" type="radio" default="" label="POLL_PARAMS_LABEL_LOCAL_VOTING" description="POLL_PARAMS_DESC_LOCAL_VOTING">
+                <option value="">Use Global</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </param>
+            <param name="poll_unvoted" type="radio" default="" label="POLL_PARAMS_LABEL_UNVOTED" description="POLL_PARAMS_DESC_UNVOTED">
+                <option value="">Use Global</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </param>
+            <param name="poll_delay" type="text" default="" label="POLL_PARAMS_LABEL_DELAY_VOTING" description="POLL_PARAMS_DESC_DELAY_VOTING">
+            </param>
+            <param name="poll_require_login" type="radio" default="0" label="POLL_PARAMS_LABEL_LOGIN" description="POLL_PARAMS_DESC_LOGIN">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </param>
+        </field>
+    </fields>
+</form>

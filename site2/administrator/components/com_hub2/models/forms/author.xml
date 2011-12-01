@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <!-- site.xml $Id: $ -->
+<form>
+  <fields>
+    <field name="fullname" type="text" id="fullname"
+      class="inputbox validate required custom-validate-length_0-255 @lbl"
+      label="ADMIN_AUTHOR_XML_LABEL_FULLNAME" size="52" default=""
+      description="ADMIN_AUTHOR_XML_DESC_FULLNAME" required="true" />
+    <field name="alias" type="text" id="alias"
+      class="inputbox @lbl validate required custom-validate-length_0-255"
+      label="ADMIN_AUTHOR_XML_LABEL_ALIAS" size="52" default=""
+      description="ADMIN_AUTHOR_XML_DESC_ALIAS" />
+    <field name="body" type="textarea" id="body" class="inputbox @lbl"
+      label="ADMIN_AUTHOR_XML_LABEL_BODY" rows="5" cols="50" default=""
+      description="ADMIN_AUTHOR_XML_DESC_BODY" />
+    <field name="published" type="radio" id="published" class="inputbox @lbl"
+      label="ADMIN_AUTHOR_XML_LABEL_PUBLISHED" description="ADMIN_AUTHOR_XML_DESC_PUBLISHED"
+      default="1" required="true">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </field>
+
+    <field name="user_id" type="list_userlist" id="user_id"
+      class="inputbox validate required @lbl paramtype" label="ADMIN_AUTHOR_XML_LABEL_USER"
+      size="52" default="" description="ADMIN_AUTHOR_XML_DESC_USER" />
+    <field name="email" type="text" id="email"
+      class="inputbox validate validate-email required custom-validate-length_0-255 @lbl"
+      label="ADMIN_AUTHOR_XML_LABEL_EMAIL" size="52" default=""
+      description="ADMIN_AUTHOR_XML_DESC_EMAIL" />
+    <field name="position" type="list_authorpositionlist" id="position"
+      class="inputbox @lbl paramtype" label="ADMIN_AUTHOR_XML_LABEL_POSITION"
+      size="52" default="" description="ADMIN_AUTHOR_XML_DESC_POSITION" />
+  </fields>
+</form>

@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>Hub2 Topics</name>
+  <author>Anurag Gupta</author>
+  <version>1.0.0</version>
+  <description>Definition for HUB2 topics</description>
+  <copyright>2010, HYPERLOCALIZER</copyright>
+  <reference>
+  	<table name="hub2_topics">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="name" translate="1" >Name</field>
+        <field type="text" name="comments" translate="1">Comments</field>
+        <field type="text" name="metadesc" translate="1">Metadesc</field>
+        <field type="text" name="metakey" translate="1">Metakey</field>
+  		<field type="checked_out_by" name="checked_out" translate="0">Check out by</field>
+  		<field type="checked_out_date" name="checked_out_time" translate="0">Check out date</field>
+  	</table>
+  </reference>
+</joomfish>

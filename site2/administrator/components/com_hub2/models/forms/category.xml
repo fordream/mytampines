@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- category.xml $Id: $ -->
+<form>
+    <fields>
+        <field name="title"
+          type="text"
+          id="title"
+          class="inputbox validate required custom-validate-length_0-255 @lbl"
+            label="ADMIN_CATEGORY_XML_LABEL_TITLE"
+            size="100"
+            default=""
+            description="ADMIN_CATEGORY_XML_DESC_TITLE"
+        />
+        <field name="alias"
+          type="text"
+          id="alias"
+          class="inputbox validate required  custom-validate-length_0-255 @lbl"
+            label="ADMIN_CATEGORY_XML_LABEL_ALIAS"
+            size="50"
+            default=""
+            description="ADMIN_CATEGORY_XML_DESC_ALIAS"
+        />
+        <field name="subtitle"
+          type="text"
+          id="subtitle"
+          class="inputbox validate custom-validate-length_0-255 @lbl"
+            label="ADMIN_CATEGORY_XML_LABEL_SUBTITLE"
+            size="100"
+            default=""
+            description="ADMIN_CATEGORY_XML_DESC_SUBTITLE"
+        />
+        <field name="parent_id"
+          type="list_categorylist"
+          id="parent_id"
+          class="inputbox @lbl"
+            label="ADMIN_CATEGORY_XML_LABEL_PARENT_CATEGORY"
+            size="1"
+            default="0"
+            description="ADMIN_CATEGORY_XML_DESC_PARENT_CATEGORY"
+        />
+        <field name="content_types"
+          type="hub2contenttype"
+          id="content_types"
+          class="inputbox @lbl"
+            label="ADMIN_CATEGORY_XML_LABEL_CONTENT_TYPES"
+            size="5"
+            multiple="multiple"
+            default=""
+            description="ADMIN_CATEGORY_XML_DESC_CONTENT_TYPES"
+        />
+        <field name="published"
+          type="radio"
+          id="published"
+          class="inputbox @lbl"
+            label="ADMIN_CATEGORY_XML_LABEL_PUBLISHED"
+            description="ADMIN_CATEGORY_XML_DESC_PUBLISHED"
+            default="1"
+            required="true">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </field>
+        <field name="body"
+          type="textarea_editor"
+          id="body"
+          class="inputbox @lbl"
+            height="400"
+            label="ADMIN_CATEGORY_XML_LABEL_DESCRIPTION"
+            templatexml="com_hub2"
+            rows="5" cols="50"
+            default=""
+            description="ADMIN_CATEGORY_XML_DESC_DESCRIPTION"
+            buttons="image,pagebreak,readmore,hub2map,hub2poll,avreloaded"
+            filter="raw"
+        />
+        <field name="metakey"
+          type="textarea"
+          id="metakey"
+          class="inputbox @lbl"
+            label="ADMIN_CATEGORY_XML_LABEL_METAKEY"
+            rows="5" cols="50"
+            default=""
+            description="ADMIN_CATEGORY_XML_DESC_METAKEY"
+        />
+
+        <field name="metadesc"
+          type="textarea"
+          id="metadesc"
+          class="inputbox @lbl"
+            label="ADMIN_CATEGORY_XML_LABEL_METADESC"
+            rows="5" cols="50"
+            default=""
+            description="ADMIN_CATEGORY_XML_DESC_METADESC"
+        />
+        <field name="comment"
+          type="textarea"
+          id="comment"
+          class="inputbox @lbl"
+            label="ADMIN_CATEGORY_XML_LABEL_COMMENT"
+            rows="5" cols="50"
+            default=""
+            description="ADMIN_CATEGORY_XML_DESC_COMMENT"
+        />
+    </fields>
+    <fields group="params">
+        <field name="params"
+          type="hub2registry"
+          id="params"
+          class="inputbox @lbl"
+            label="ADMIN_CATEGORY_XML_LABEL_CAT_PARAMETER"
+            description="ADMIN_CATEGORY_XML_DESC_CAT_PARAMETER">
+            <param name="page_title"
+              type="text"
+              default=""
+              label="COMMON_PAGE_TITLE"
+              description="COMMON_DESC_PAGE_TITLE">
+            </param>
+            <param name="pageclass_sfx"
+              type="text"
+              default=""
+              label="COMMON_PAGE_CLASS_SUFFIX"
+              description="COMMON_DESC_PAGE_CLASS_SUFFIX">
+            </param>
+            <param name="show_title" type="radio" default="" label="COMMON_SHOW_PAGE_TITLE" description="COMMON_DESC_SHOW_PAGE_TITLE">
+                <option value="">COMMON_USE_MENU</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </param>
+            <param name="show_subtitle" type="radio" default="" label="COMMON_SHOW_SUBTITLE" description="COMMON_DESC_SHOW_SUBTITLE">
+                <option value="">Use Default</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </param>
+            <param name="show_description" type="radio" default="" label="COMMON_SHOW_DESCRIPTION" description="COMMON_DESC_SHOW_DESCRIPTION">
+                <option value="">COMMON_USE_MENU</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </param>
+            <param name="show_description_image" type="radio" default="" label="COMMON_SHOW_DESCRIPTION_IMAGE" description="COMMON_DESC_SHOW_DESCRIPTION_IMAGE">
+                <option value="">COMMON_USE_MENU</option>
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </param>
+            <param name="image_size" type="list" default="" label="COMMON_IMAGE_TO_USE" description="COMMON_SELECT_AN_OPTION">
+                <option value="">COMMON_USE_MENU</option>
+                <option value="thumb">COMMON_IMAGE_SIZE_THUMB</option>
+                <option value="small">COMMON_IMAGE_SIZE_SMALL</option>
+                <option value="medium">COMMON_IMAGE_SIZE_MEDIUM</option>
+                <option value="large">COMMON_IMAGE_SIZE_LARGE</option>
+                <option value="original">COMMON_IMAGE_SIZE_ORIGINAL</option>
+            </param>
+            <param name="image_position" type="list" default="" label="COMMON_IMAGE_POSITION" description="COMMON_SELECT_AN_OPTION">
+                <option value="">COMMON_USE_MENU</option>
+                <option value="left">Left</option>
+                <option value="right">Right</option>
+            </param>
+        </field>
+     </fields>
+</form>

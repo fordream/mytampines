@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it_IT" xml:lang="it_IT">
+<head>
+<title>How to create a plugin</title>
+<link href="css/help.css" rel="stylesheet" type="text/css" />
+<meta name="copyright" content="Copyright (C) 2008 Bernard Gilly. All rights reserved." />
+<meta name="license" content="http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL" />
+<style type="text/css">
+<!--
+.Style1 {
+	font-size: 14pt;
+	font-weight: bold;
+}
+.Style5 {color: #FF0000}
+-->
+
+<!-- Italian translation - traduzione in italiano: PGB - info@pgb75.it - www.pgb75.eu -->
+
+</style>
+</head>
+<body>
+<h1>AlphaUserPoints - Come creare un plugin - (base) </h1>
+
+<p> La creazione di un plugin (creazione di una nuova regola per un componente di terzi) &egrave; divisa in 2 fasi. 
+    <br />
+    <br />
+    <span class="Style1">Fase 1 - Inserire l'API nel componente</span><br />
+Questo corso mira principalmente agli sviluppatori o a qualsiasi persona con un livello di conoscenza del linguaggio PHP sufficientemente avanzata. <br />
+<br />
+Semplicemente, inserisci la seguente API nel codice del componente nel punto che desideri. L'ideale &egrave; seguire una azione che possa portare oggetti all'utente connesso. Per esempio, in qualsiasi componente per lasciare commenti o forum, aggiungi l'API dopo l'inserimento del codice sorgente del commento o del nuovo tema nel database. <br />
+<br />
+<strong>API:</strong> </p>
+<p class="Style5">$api_AUP = JPATH_SITE.DS.'components'.DS.'com_alphauserpoints'.DS.'helper.php';<br />
+  if ( file_exists($api_AUP))<br />
+  {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;require_once ($api_AUP);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;AlphaUserPointsHelper::newspoints( 'function_name' );<br />
+  }</p>
+<p><br />
+  <b>function_name</b> &egrave; la regola che verr&agrave; utilizzata per assegnare punti all'utente attuale (se &egrave; registrato ed ha effettuato l'accesso). <br />
+Per tutte le regole incluse in AlphaUserPoints (sistema), i nomi delle funzioni sono scritti come segue: <br />
+<br />
+esempio: <i>sysplgaup_newregistered</i> per assegnare punti ad un nuovo utente registrato. <br />
+<br />
+Sarebbe opportuno mantenere un nome standrd per i plugin di componenti di terzi come descritto: <br />
+<br />
+<i>plgaup_function_name<br />
+</i><br />
+Esempio: <i>plgaup_newcomment</i> or <i>plgaup_newtopic</i> per riprendere l'esempio di inclusione dell'API di questo componente in un commento o un forum.<br />
+Il nome di una funzione per assegnare punti quando si crea un nuovo argomento pubblicato nel componente Fireboard potrebbe essere,  <i>plgaup_newtopic_fb</i>. <br />
+<br />
+<span class="Style1">Fase 2 - Creazione del file XML</span><br />
+Si dovrebbe poi creare un file .xml per facilitare l'installazione della regola in AlphaUserPoints. <br />
+Occorre specificare 4 elementi: <br />
+<br />
+il nome della regola, la sua descrizione, il nome del componente che utilizza la regola (com_example) e il nome della funzione utilizzato dalla regola. <br />
+<br />
+&lt;? xml version = "1.0" encoding = "utf-8"?&gt; <br />
+&lt;alphauserpoints type="plugin"&gt; <br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;rule&gt;<span class="Style5">nome breve della regola</span>&lt;/ rule&gt; <br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;description&gt;<span class="Style5">Descrizione della regola</span>&lt;/ description&gt; <br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;component&gt;<span class="Style5">com_esempio_componente (o componente esempio)</span>&lt;/ component&gt; <br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;plugin_function&gt;<span class="Style5">plgaup_function_name</span>&lt;/ plugin_function&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;fixed_points&gt;<span class="Style5">true </span>o<span class="Style5"> false </span>&lt;/ fixed_points&gt;<br />
+&lt;/ alphauserpoints&gt;<br />
+  <br />
+  Questo file XML deve essere salvato con codifica UTF-8 e poi compresso (.zip). <br />
+  <br />
+  <span class="Style1">Note per gli sviluppatori </span><br />
+  <br />
+  Potete trovare la documentazione completa per inserire ed utilizzare questa API nei vostri componenti sul sito ufficiale dell'autore:r <a href="http://www.alphaplug.com">www.alphaplug.com</a>.</p>
+<p>&nbsp;</p>
+</body>
+</html>

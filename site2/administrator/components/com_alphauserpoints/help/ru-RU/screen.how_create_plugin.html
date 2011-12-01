@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru_RU" xml:lang="ru_RU">
+<head>
+<title>How to create a plugin</title>
+<link href="css/help.css" rel="stylesheet" type="text/css" />
+<meta name="copyright" content="Copyright (C) 2008 Bernard Gilly. All rights reserved." />
+<meta name="license" content="http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL" />
+<style type="text/css">
+<!--
+.Style1 {
+	font-size: 14pt;
+	font-weight: bold;
+}
+.Style5 {color: #FF0000}
+.Style6 {color: #000000}
+-->
+</style>
+</head>
+<body>
+<h1>AlphaUserPoints - Как создать прлагин - (основы) </h1>
+
+<p> Процесс создания плагина (создания нового правила для других компонентов) состоит из двух фаз. 
+    <br />
+    <br />
+    <span class="Style1">Шаг 1 - Добавляем API в компонент </span><br />
+Этот курс предназначен впервую очередь для разработчиков или людей с болле продвинутым знанием PHP. <br />
+<br />
+Просто вставьте следующий API в коде компонента, где вы хотите применить правило. В идеале там, где совершается какое-либо действие, которое возвращает данные для подключенного(авторизованного) пользователя.
+Например, в компоненте каких-либо комментариев или на форуме, надо добавить API после записи исходного кода комментария или создания новой темы в базу данных. <br /><br />
+<strong>API:</strong> </p>
+<p class="Style5">$api_AUP = JPATH_SITE.DS.'components'.DS.'com_alphauserpoints'.DS.'helper.php';<br />
+  if ( file_exists($api_AUP))<br />
+  {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;require_once ($api_AUP);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;AlphaUserPointsHelper::newpoints( 'function_name' );<br />
+  }</p>
+<p><br />
+  <b>function_name</b> это имя правила которое будет применяться для начисления или списания баллов текущего пользователя (при условии что он зарегистрирован и авторизован). <br />
+Для всех системных правил включенных в AlphaUserPoints, имена функций прописаны следующим образом: <br />
+<br />
+пример: <i>sysplgaup_newregistered</i> для начисления баллов вновь зарегистрированному пользователю. <br />
+<br />
+Необходимо соблюдать стандарт именования для создаваемых плагинов следующим образом: <br />
+<br />
+<i>plgaup_function_name<br />
+</i><br />
+Например <i>plgaup_newcomment</i> или <i>plgaup_newtopic</i>, продолжая тему примера со вставкой API в комментариях или на форуме. <br />
+Имя функции начисления баллов за создание новой темы в компоненте форума Fireboard может быть, к примеру, <i>plgaup_newtopic_fb</i>. <br />
+<br />
+<span class="Style1">Шаг 2 - Создание XML файла</span><br />
+Теперь необходимо создать файл xml для обеспечения вставки нового правила в список правил AlphaUserPoints. <br />
+Вы должны указать 5 элементов: <br />
+<br />
+Имя правила, его описание, название компонента где правило будет применяться (com_example), имя функции применяющейся правилом и тип баллов фксированные (true or false). <br />
+<br />
+&lt;? xml version = "1.0" encoding = "utf-8"?&gt; <br />
+&lt;alphauserpoints type="plugin"&gt; <br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;rule&gt;<span class="Style5">краткое название правила</span>&lt;/ rule&gt; <br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;description&gt;<span class="Style5">Description of the rule</span>&lt;/ description&gt; <br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;component&gt;<span class="Style5">com_example_component (or Exemple component)</span>&lt;/ component&gt; <br />
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;plugin_function&gt;<span class="Style5">plgaup_function_name</span>&lt;/ plugin_function&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;fixed_points&gt;<span class="Style5">true <span class="Style6">or</span> false</span>&lt;/fixed_points&gt;<br />
+&lt;/ alphauserpoints&gt;<br />
+  <br />
+  Файл XML должен иметь кодировку UTF-8 и может быть заархивирован (. Zip). <br />
+  <br />
+  <span class="Style1">Примечание для разработчиков </span><br />
+  <br />
+Полную документацию о включении и использовании API в ваших компонентах вы можете найти на официальном сайте автора по адресу: <a href="http://www.alphaplug.com">www.alphaplug.com</a>.</p>
+<p>&nbsp;</p>
+</body>
+</html>

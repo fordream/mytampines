@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- editorprofile.xml $Id: $ -->
+<form>
+	<fields>
+        <field name="profile" type="hub2registry" default="" id="profile" class="inputbox @lbl" label="ADMIN_EDITOR_PROFILE">
+        <param name="author_id" type="list_authors" default="" label="ADMIN_EDITOR_LABEL_DEFAULT_AUTHOR" description="ADMIN_EDITOR_DESC_DEFAULT_AUTHOR">
+        </param>
+        <param name="timezone" type="list_timezones" default="" label="ADMIN_EDITOR_LABEL_TIMEZONE" description="ADMIN_EDITOR_DESC_TIMEZONE">
+        </param>
+        </field>
+	</fields>
+</form>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5" method="upgrade">
+    <name>DJClassifieds</name>
+    <creationDate>December 2010</creationDate>
+    <author>Design-Joomla.eu</author>
+    <copyright>
+        Copyright (C) 2010 Blue Constant Media LTD, All rights reserved.
+    </copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>contact@design-jooma.eu</authorEmail>
+	<authorUrl>http://design-joomla.eu</authorUrl>
+    <version>1.1.2</version>
+    <administration>
+        <menu img="components/com_djclassifieds/images/icon-16-djclassifieds.png">DJClassifieds</menu>
+        <files folder="admin">
+			<folder>elements</folder>			
+            <folder>helpers</folder>
+			<folder>images</folder>	
+			<folder>models</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        	<filename>admin.djclassifieds.php</filename>
+            <filename>controller.php</filename>
+			<filename>config.xml</filename>									
+        </files>
+        <languages folder="admin">
+            <language tag="pl-PL">pl-PL.com_djclassifieds.ini</language>
+            <language tag="en-GB">en-GB.com_djclassifieds.ini</language>
+        </languages>
+    </administration>
+	<params>
+			<param name="exp_days" default="7" />
+			<param name="notify_days" default="3" />
+			<param name="prom_price" default="10" />
+			<param name="promotion" default="1" />
+			<param name="user_type" default="1" />
+			<param name="autopublish" default="1" />
+			<param name="notify_admin" default="0" />
+			<param name="unit_price" default="EUR" />
+			<param name="limit_djitem_show" default="7" />
+			<param name="blog_columns_number" default="2" />
+			<param name="img_limit" default="5" />
+			<param name="img_maxsize" default="0" />
+			<param name="introdesc_char_limit" default="120" />
+			<param name="show_adsn_cat" default="1" />
+			<param name="allow_htmltags" default="0" />
+			<param name="showitem_jump" default="0" />
+			<param name="tooltip_img" default="1" />
+			<param name="tooltip_title" default="1" />
+			<param name="showprice" default="1" />
+			<param name="showcontact" default="1" />
+			<param name="ask_seller" default="1" />
+			<param name="showaddetails" default="1" />
+			<param name="show_footer" default="1" />
+			<param name="bigth_width" default="600"/>
+			<param name="bigth_height" default="0"/>
+			<param name="smallth_width" default="56"/>
+			<param name="smallth_height" default="32"/>
+			<param name="middleth_width" default="150"/>
+			<param name="middleth_height" default="110"/>
+			<param name="th_width" default="270"/>
+			<param name="th_height" default="180" />
+			<param name="catth_width" default="68"/>
+			<param name="catth_height" default="49" />
+			<param name="ask_limit_one" default="5" />
+			<param name="ask_limit_hour" default="15" />			
+			<!-- Hyperlocalizer
+			<param name="captcha" default="0" />			
+            -->
+ 		</params>
+	<files folder="site">
+		<folder>helpers</folder>
+		<folder>images</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<filename>controller.php</filename>
+		<filename>djclassifieds.php</filename>
+		<filename>gpl.txt</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		<filename>style.css</filename>
+	</files>
+	<languages folder="site">
+		<language tag="pl-PL">pl-PL.com_djclassifieds.ini</language>
+		<language tag="en-GB">en-GB.com_djclassifieds.ini</language>	
+	</languages>
+	<install>
+        <queries>
+            <query>
+				CREATE TABLE IF NOT EXISTS #__djcf_categories (
+				`id` int(11) NOT NULL auto_increment,
+  				`name` varchar(100),
+  				`parent_id` int(11) NOT NULL,
+  				`price` int(11) NOT NULL default '0',
+  				`description` text NOT NULL,
+  				`icon_url` varchar(255) NOT NULL,
+  				`ordering` int(11) NOT NULL default '0',
+  				`published` int(11) NOT NULL default '1',
+  				`autopublish` int(11) NOT NULL default '0',
+  				PRIMARY KEY  (`id`)
+				);
+            </query>
+			<query>				
+				CREATE TABLE IF NOT EXISTS #__djcf_items (
+			    `id` int(11) NOT NULL auto_increment,
+			    `cat_id` int(11) NOT NULL default '0',
+  		    	`user_id` int(11) NOT NULL,
+  		    	`name` varchar(255) NOT NULL,
+  		    	`description` text,
+  		    	`intro_desc` text,
+  		    	`image_url` text,
+  		    	`date_start` date NOT NULL,
+  		    	`date_exp` date NOT NULL,
+    		    `display` int(11) NOT NULL default '0',
+  		    	`special` int(11) NOT NULL default '0',
+  		    	`paypal_token` varchar(12) NOT NULL,
+  		    	`payed` int(11) NOT NULL default '0',
+				`notify` int(11) NOT NULL default '0',
+				`published` int(11) NOT NULL default '1',
+				`ordering` int(11) NOT NULL default '0',
+				`price` varchar(255), 
+				`contact` TEXT NULL,  
+				`pay_type` varchar(255),
+				 PRIMARY KEY  (`id`),
+				 FOREIGN KEY (`cat_id`) REFERENCES #__djcf_categories(`id`)
+				);
+			</query>
+			<query>
+				CREATE TABLE IF NOT EXISTS #__djcf_itemsask (
+	 			`id` int(11) NOT NULL auto_increment,
+  				`item_id` int(11) NOT NULL,
+  				`user_id` int(11) NOT NULL,
+	  			`message` text NOT NULL,
+  				`date` datetime NOT NULL,
+  				PRIMARY KEY  (`id`)
+				);
+			</query>
+        </queries>
+    </install>
+    <uninstall>
+        <queries>
+            <query>
+                DROP TABLE IF EXISTS `#__djcf_categories`;
+            </query>
+			<query>
+                DROP TABLE IF EXISTS `#__djcf_items`;
+            </query>
+			<query>
+                DROP TABLE IF EXISTS `#__djcf_itemsask`;
+            </query>
+        </queries>
+    </uninstall>
+</install>
+

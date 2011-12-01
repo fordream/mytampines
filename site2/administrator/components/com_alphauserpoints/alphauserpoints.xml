@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0" method="upgrade">
+	<name>AlphaUserPoints</name>
+	<creationDate>2011 january 11</creationDate>
+	<author>Bernard Gilly</author>
+	<authorEmail>contact@alphaplug.com</authorEmail>
+	<authorUrl>http://www.alphaplug.com</authorUrl>
+	<copyright>2008-2011 Bernard Gilly - All Rights Reserved</copyright>
+	<license>GNU/GPL</license>
+	<version>1.5.13</version>
+	<description><![CDATA[User Points System component for Joomla!.]]></description>
+	<files folder="frontend">
+		<filename>index.html</filename>
+		<filename>alphauserpoints.php</filename>
+		<filename>controller.php</filename>
+		<filename>helper.php</filename>
+		<filename>router.php</filename>
+		<filename>controllers/index.html</filename>		
+		<filename>controllers/account.php</filename>	
+		<filename>controllers/buypoints.php</filename>	
+		<filename>controllers/invite.php</filename>	
+		<filename>controllers/medals.php</filename>	
+		<filename>controllers/rssactivity.php</filename>	
+		<filename>controllers/user2userpoints.php</filename>	
+		<filename>controllers/users.php</filename>
+    <filename>controllers/latestactivity.php</filename>
+    <filename>controllers/addressbook.php</filename>
+		<filename>views/index.html</filename>		
+		<filename>views/user2userpoints/index.html</filename>
+		<filename>views/user2userpoints/view.html.php</filename>
+		<filename>views/user2userpoints/metadata.xml</filename>
+		<filename>views/user2userpoints/tmpl/index.html</filename>
+		<filename>views/user2userpoints/tmpl/default.php</filename>
+		<filename>views/user2userpoints/tmpl/default.xml</filename>			
+		<filename>views/account/index.html</filename>
+		<filename>views/account/view.html.php</filename>
+		<filename>views/account/metadata.xml</filename>
+		<filename>views/account/tmpl/index.html</filename>
+		<filename>views/account/tmpl/default.php</filename>
+		<filename>views/account/tmpl/default.xml</filename>    	
+		<filename>views/invite/index.html</filename>
+		<filename>views/invite/view.html.php</filename>
+		<filename>views/invite/metadata.xml</filename>
+		<filename>views/invite/tmpl/index.html</filename>
+		<filename>views/invite/tmpl/default.xml</filename>
+		<filename>views/invite/tmpl/default.php</filename>
+    <filename>views/invite/tmpl/plaxo_cb.html</filename>
+    <filename>views/invite/tmpl/default_addressbook.php</filename>
+		<filename>views/users/index.html</filename>
+		<filename>views/users/view.html.php</filename>
+		<filename>views/users/metadata.xml</filename>
+		<filename>views/users/tmpl/index.html</filename>
+		<filename>views/users/tmpl/default.php</filename>
+		<filename>views/users/tmpl/default.xml</filename>
+		<filename>views/buypoints/index.html</filename>
+		<filename>views/buypoints/view.html.php</filename>
+		<filename>views/buypoints/metadata.xml</filename>
+		<filename>views/buypoints/tmpl/index.html</filename>
+		<filename>views/buypoints/tmpl/default.php</filename>
+		<filename>views/buypoints/tmpl/default.xml</filename> 
+		<filename>views/medals/index.html</filename>
+		<filename>views/medals/view.html.php</filename>
+		<filename>views/medals/metadata.xml</filename>		
+		<filename>views/medals/tmpl/index.html</filename>
+		<filename>views/medals/tmpl/default.php</filename>
+    <filename>views/medals/tmpl/default_listing.php</filename>	
+    <filename>views/medals/tmpl/default.xml</filename>    
+		<filename>views/rssactivity/index.html</filename>
+		<filename>views/rssactivity/view.html.php</filename>
+		<filename>views/rssactivity/metadata.xml</filename>		
+		<filename>views/rssactivity/tmpl/index.html</filename>
+		<filename>views/rssactivity/tmpl/default.php</filename>
+    <filename>views/rssactivity/tmpl/default.xml</filename>    
+		<filename>views/latestactivity/index.html</filename>
+		<filename>views/latestactivity/view.html.php</filename>
+		<filename>views/latestactivity/metadata.xml</filename>		
+		<filename>views/latestactivity/tmpl/index.html</filename>
+		<filename>views/latestactivity/tmpl/default.php</filename>
+    <filename>views/latestactivity/tmpl/default.xml</filename>
+		<filename>models/index.html</filename>
+		<filename>models/alphauserpoints.php</filename>
+		<filename>models/validate_payment.php</filename>		
+		<filename>models/currentrequests.php</filename>
+		<filename>models/medals.php</filename>
+		<filename>models/rssactivity.php</filename>
+		<filename>models/latestactivity.php</filename>
+		<filename>helpers/index.html</filename>
+    <filename>helpers/helpers.php</filename>
+    <filename>helpers/openinviter.php</filename>    
+    <filename>helpers/uddeim_alert.php</filename>
+    <filename>helpers/uddeim_mailbox.php</filename>       
+		<filename>assets/index.html</filename>
+		<filename>assets/images/index.html</filename>
+		<filename>assets/images/add_button.gif</filename> 
+    <filename>assets/images/tick.png</filename>
+    <filename>assets/images/publish_x.png</filename>
+    <filename>assets/images/bar.gif</filename>
+    <filename>assets/images/icon_csv.gif</filename>
+    <filename>assets/images/loader.gif</filename>
+    <filename>assets/images/tick.png</filename>
+    <filename>assets/images/j_arrow.png</filename>
+    <filename>assets/images/j_arrow_down.png</filename>    
+    <filename>assets/images/facebook.gif</filename>
+    <filename>assets/images/twitter.gif</filename>
+    <filename>assets/images/aim.gif</filename>
+    <filename>assets/images/yim.gif</filename>
+    <filename>assets/images/icq.gif</filename>
+    <filename>assets/images/msn.gif</filename>
+    <filename>assets/images/gtalk.gif</filename>
+    <filename>assets/images/skype.gif</filename>
+    <filename>assets/images/xfire.gif</filename>    
+    <filename>assets/images/percent_10.png</filename>
+    <filename>assets/images/percent_20.png</filename>
+    <filename>assets/images/percent_30.png</filename>
+    <filename>assets/images/percent_40.png</filename>
+    <filename>assets/images/percent_50.png</filename>
+    <filename>assets/images/percent_60.png</filename>
+    <filename>assets/images/percent_70.png</filename>
+    <filename>assets/images/percent_80.png</filename>
+    <filename>assets/images/percent_90.png</filename>      
+    <filename>assets/images/paypal_buttons/index.html</filename>
+    <filename>assets/images/paypal_buttons/btn_buynowCC_LG.gif</filename>
+    <filename>assets/images/paypal_buttons/x-click-but01.gif</filename>
+    <filename>assets/images/paypal_buttons/x-click-but5.gif</filename>    
+    <filename>assets/images/paypal_buttons/x-click-but23.gif</filename>
+    <filename>assets/images/paypal_buttons/x-click-butcc.gif</filename>    
+    <filename>assets/images/categories/index.html</filename>    
+    <filename>assets/images/categories/ar.gif</filename>
+    <filename>assets/images/categories/cd.gif</filename>
+    <filename>assets/images/categories/co.gif</filename>
+    <filename>assets/images/categories/fo.gif</filename>
+    <filename>assets/images/categories/li.gif</filename>
+    <filename>assets/images/categories/mu.gif</filename>
+    <filename>assets/images/categories/ot.gif</filename>
+    <filename>assets/images/categories/ph.gif</filename>
+    <filename>assets/images/categories/po.gif</filename>
+    <filename>assets/images/categories/pu.gif</filename>
+    <filename>assets/images/categories/re.gif</filename>
+    <filename>assets/images/categories/sh.gif</filename>
+    <filename>assets/images/categories/su.gif</filename>
+    <filename>assets/images/categories/sy.gif</filename>
+    <filename>assets/images/categories/us.gif</filename>
+    <filename>assets/images/categories/vi.gif</filename>     
+    <filename>assets/images/avatars/index.html</filename>
+    <filename>assets/images/avatars/generic_gravatar_grey.gif</filename>
+    <filename>assets/images/avatars/generic_gravatar_grey.png</filename>
+    <filename>assets/images/awards/index.html</filename>
+    <filename>assets/images/awards/icons/index.html</filename>
+    <filename>assets/images/awards/icons/award_star_bronze.gif</filename>
+    <filename>assets/images/awards/icons/award_star_silver.gif</filename>
+    <filename>assets/images/awards/icons/award_star_gold.gif</filename>    
+    <filename>assets/images/awards/icons/icon_gold.gif</filename>
+    <filename>assets/images/awards/icons/icon_silver.gif</filename>
+    <filename>assets/images/awards/icons/icon_bronze.gif</filename>    
+    <filename>assets/images/awards/large/index.html</filename>
+    <filename>assets/images/awards/large/bronze.gif</filename>
+    <filename>assets/images/awards/large/silver.gif</filename>
+    <filename>assets/images/awards/large/gold.gif</filename>
+    <filename>assets/images/awards/large/award_big_gold.png</filename>    
+		<filename>assets/recaptcha/index.html</filename>
+		<filename>assets/recaptcha/recaptchalib.php</filename>
+		<filename>assets/css/index.html</filename>
+		<filename>assets/css/alphauserpoints.css</filename>
+		<filename>assets/ajax/index.html</filename>
+		<filename>assets/ajax/jquery-1.3.2.min.js</filename>
+		<filename>assets/ajax/checkusername.php</filename>
+		<filename>assets/ajax/ajax-check.js</filename>
+    <filename>assets/ajax/maxlength.js</filename>
+		<filename>assets/phpThumb/index.php</filename>
+    <filename>assets/phpThumb/index.html</filename>
+    <filename>assets/phpThumb/.htaccess</filename>
+		<filename>assets/phpThumb/phpthumb.bmp.php</filename>
+		<filename>assets/phpThumb/phpthumb.class.php</filename>
+		<filename>assets/phpThumb/phpThumb.config.php</filename>
+		<filename>assets/phpThumb/phpthumb.filters.php</filename>
+		<filename>assets/phpThumb/phpthumb.functions.php</filename>
+		<filename>assets/phpThumb/phpthumb.gif.php</filename>
+		<filename>assets/phpThumb/phpthumb.ico.php</filename>
+		<filename>assets/phpThumb/phpThumb.php</filename>
+		<filename>assets/phpThumb/phpthumb.unsharp.php</filename>		
+		<filename>assets/phpThumb/cache/index.php</filename>
+		<filename>assets/phpThumb/cache/index.html</filename>
+		<filename>assets/phpThumb/cache/source/index.php</filename>
+		<filename>assets/phpThumb/cache/source/index.html</filename>
+		<filename>assets/phpThumb/fonts/index.html</filename>
+		<filename>assets/phpThumb/images/index.html</filename>
+		<filename>assets/phpThumb/demo/index.html</filename>
+		<filename>assets/phpThumb/demo/index.php</filename>		
+    <filename>assets/phpThumb/demo/phpThumb.demo.check.php</filename>
+	</files>	
+	<languages folder="languages-front">
+		<language tag="en-GB">en-GB/en-GB.com_alphauserpoints.ini</language>
+		<language tag="">fr-FR/fr-FR.com_alphauserpoints.ini</language>
+		<language tag="">it-IT/it-IT.com_alphauserpoints.ini</language>
+		<language tag="">es-ES/es-ES.com_alphauserpoints.ini</language>
+		<language tag="">fi-FI/fi-FI.com_alphauserpoints.ini</language>
+		<language tag="">nl-NL/nl-NL.com_alphauserpoints.ini</language>
+    <language tag="">ru-RU/ru-RU.com_alphauserpoints.ini</language>
+    <language tag="">de-DE/de-DE.com_alphauserpoints.ini</language>
+    <language tag="">pt-BR/pt-BR.com_alphauserpoints.ini</language>
+    <language tag="">cs-CZ/cs-CZ.com_alphauserpoints.ini</language>
+    <language tag="">ro-RO/ro-RO.com_alphauserpoints.ini</language>
+    <language tag="">ar-DZ/ar-DZ.com_alphauserpoints.ini</language>
+    <language tag="">el-GR/el-GR.com_alphauserpoints.ini</language>
+	</languages>
+	<installfile>install.alphauserpoints.php</installfile>
+	<uninstallfile>uninstall.alphauserpoints.php</uninstallfile>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8" >install.mysql.utf8.sql</file>
+			<file driver="mysql">install.mysql.sql</file>
+		</sql>
+	</install>
+	<administration>
+		<menu>AlphaUserPoints</menu>
+		<files folder="backend">
+			<filename>index.html</filename>
+			<filename>admin.alphauserpoints.php</filename>			
+			<filename>controller.php</filename>
+			<filename>CHANGELOG.php</filename>
+ 			<filename>install.mysql.utf8.sql</filename>
+ 			<filename>install.mysql.sql</filename>
+ 			<filename>config_general.xml</filename> 
+      <filename>integration.xml</filename>       			
+			<filename>views/index.html</filename>
+			<filename>views/rules/index.html</filename>
+			<filename>views/rules/view.html.php</filename>
+			<filename>views/rules/tmpl/index.html</filename>
+			<filename>views/rules/tmpl/default.php</filename>
+			<filename>views/rules/tmpl/default_form.php</filename>
+			<filename>views/rules/tmpl/default_custom.php</filename>
+      <filename>views/rules/tmpl/default_custom2.php</filename>      		
+			<filename>views/statistics/index.html</filename>
+			<filename>views/statistics/view.html.php</filename>
+			<filename>views/statistics/tmpl/index.html</filename>
+			<filename>views/statistics/tmpl/default.php</filename>
+			<filename>views/statistics/tmpl/default_form.php</filename>
+			<filename>views/user/index.html</filename>
+			<filename>views/user/view.html.php</filename>
+			<filename>views/user/tmpl/index.html</filename>
+			<filename>views/user/tmpl/default.php</filename>
+			<filename>views/user/tmpl/default_form.php</filename>
+			<filename>views/maxpoints/index.html</filename>
+			<filename>views/maxpoints/view.html.php</filename>
+			<filename>views/maxpoints/tmpl/index.html</filename>
+			<filename>views/maxpoints/tmpl/default.php</filename>	
+			<filename>views/plugins/index.html</filename>
+			<filename>views/plugins/view.html.php</filename>
+			<filename>views/plugins/tmpl/index.html</filename>
+			<filename>views/plugins/tmpl/default.php</filename>
+			<filename>views/about/index.html</filename>
+			<filename>views/about/view.html.php</filename>
+			<filename>views/about/tmpl/index.html</filename>
+			<filename>views/about/tmpl/default.php</filename>			
+			<filename>views/cpanel/index.html</filename>
+			<filename>views/cpanel/view.html.php</filename>
+			<filename>views/cpanel/tmpl/index.html</filename>
+			<filename>views/cpanel/tmpl/default.php</filename>			
+			<filename>views/activities/index.html</filename>
+			<filename>views/activities/view.html.php</filename>
+			<filename>views/activities/tmpl/index.html</filename>
+			<filename>views/activities/tmpl/default.php</filename>
+			<filename>views/couponcodes/index.html</filename>
+			<filename>views/couponcodes/view.html.php</filename>
+			<filename>views/couponcodes/tmpl/index.html</filename>
+			<filename>views/couponcodes/tmpl/default.php</filename>
+			<filename>views/couponcodes/tmpl/default_form.php</filename>
+			<filename>views/couponcodes/tmpl/default_generator.php</filename>			
+			<filename>views/stats/index.html</filename>
+			<filename>views/stats/view.html.php</filename>
+			<filename>views/stats/tmpl/index.html</filename>
+			<filename>views/stats/tmpl/default.php</filename>			
+			<filename>views/configuration/index.html</filename>
+			<filename>views/configuration/view.html.php</filename>
+			<filename>views/configuration/tmpl/index.html</filename>
+			<filename>views/configuration/tmpl/default.php</filename>			
+			<filename>views/raffle/index.html</filename>
+			<filename>views/raffle/view.html.php</filename>
+			<filename>views/raffle/tmpl/index.html</filename>
+			<filename>views/raffle/tmpl/default.php</filename>
+			<filename>views/raffle/tmpl/default_form.php</filename>
+			<filename>views/levelrank/index.html</filename>
+			<filename>views/levelrank/view.html.php</filename>
+			<filename>views/levelrank/tmpl/index.html</filename>
+			<filename>views/levelrank/tmpl/default.php</filename>
+			<filename>views/levelrank/tmpl/default_form.php</filename>
+      <filename>views/levelrank/tmpl/default_listing.php</filename>
+			<filename>views/archive/index.html</filename>
+			<filename>views/archive/view.html.php</filename>
+			<filename>views/archive/tmpl/index.html</filename>
+			<filename>views/archive/tmpl/default.php</filename>	
+			<filename>models/index.html</filename>
+			<filename>models/rules.php</filename>
+			<filename>models/statistics.php</filename>
+			<filename>models/user.php</filename>
+			<filename>models/users.php</filename>
+			<filename>models/helper.php</filename>
+			<filename>models/exports.php</filename>
+			<filename>models/requests.php</filename>
+      <filename>models/upgrade.php</filename>
+      <filename>models/couponcodes.php</filename>   
+      <filename>models/configuration.php</filename>   
+      <filename>models/raffle.php</filename>
+      <filename>models/levelrank.php</filename>     
+      <filename>models/archive.php</filename> 
+			<filename>assets/index.html</filename>			
+			<filename>assets/css/index.html</filename>
+			<filename>assets/css/mod_aupadmin.css</filename>
+			<filename>assets/images/index.html</filename>
+			<filename>assets/images/aup_logo.png</filename> 
+      <filename>assets/images/icon-48-alphauserpoints.png</filename>
+      <filename>assets/images/icon-48-alphauserpoints-warning.png</filename>   		
+			<filename>assets/images/icon-48-awards.png</filename>
+			<filename>assets/images/icon-48-credits.png</filename>
+			<filename>assets/images/icon-48-help_header.png</filename>			
+			<filename>assets/images/icon-48-plugins.png</filename>
+			<filename>assets/images/icon-48-plugins_help.png</filename>
+			<filename>assets/images/icon-48-rules.png</filename>	
+      <filename>assets/images/icon-48-usersync.png</filename>
+      <filename>assets/images/icon-48-maxpoints.png</filename>
+      <filename>assets/images/icon-48-reset.png</filename>
+      <filename>assets/images/icon-48-recalculate.png</filename>
+      <filename>assets/images/icon-48-trash.png</filename>      
+      <filename>assets/images/icon-48-mostactiveusers.png</filename>
+      <filename>assets/images/icon-48-massmail.png</filename>
+      <filename>assets/images/icon-48-coupons.png</filename>
+      <filename>assets/images/icon-48-charts.png</filename>
+      <filename>assets/images/icon-48-config.png</filename>
+      <filename>assets/images/icon-48-raffle.png</filename>
+      <filename>assets/images/icon-48-rank.png</filename> 
+      <filename>assets/images/icon-48-activities.png</filename>      
+      <filename>assets/images/trash-16.png</filename>                  
+      <filename>assets/images/bar.gif</filename>
+      <filename>assets/images/bar2.gif</filename>
+      <filename>assets/images/Paypal_DonateButton.gif</filename>
+      <filename>assets/images/btn_donateCC_LG.gif</filename>      
+      <filename>assets/images/referral_icon.png</filename>                 
+      <filename>assets/images/locked.png</filename>
+      <filename>assets/images/working.gif</filename>
+      <filename>assets/images/warning.png</filename>
+      <filename>assets/images/icon-32-export.png</filename>
+      <filename>assets/images/icon-48-archive.png</filename>                  
+			<filename>assets/includes/index.html</filename>			
+			<filename>assets/includes/functions.php</filename>
+			<filename>assets/includes/alphauserpoints.installer.php</filename>			
+			<filename>assets/includes/version.php</filename>
+			<filename>assets/plugins/index.html</filename>			
+			<filename>assets/csv/index.html</filename> 
+      <filename>assets/synch/index.html</filename>	
+      <filename>assets/synch/synch.php</filename>
+      <filename>assets/recalculate/index.html</filename>	
+      <filename>assets/recalculate/recalculate.php</filename>
+			<filename>help/en-GB/index.html</filename>
+			<filename>help/en-GB/screen.alphauserpoints.html</filename>
+			<filename>help/en-GB/screen.how_create_plugin.html</filename>
+			<filename>help/en-GB/css/index.html</filename>
+			<filename>help/en-GB/css/help.css</filename>
+			<filename>help/fr-FR/index.html</filename>
+			<filename>help/fr-FR/screen.alphauserpoints.html</filename>
+			<filename>help/fr-FR/screen.how_create_plugin.html</filename>
+			<filename>help/fr-FR/css/index.html</filename>
+			<filename>help/fr-FR/css/help.css</filename>			
+			<filename>help/it-IT/index.html</filename>
+			<filename>help/it-IT/screen.alphauserpoints.html</filename>
+			<filename>help/it-IT/screen.how_create_plugin.html</filename>
+			<filename>help/it-IT/css/index.html</filename>
+			<filename>help/it-IT/css/help.css</filename>			
+			<filename>help/ru-RU/index.html</filename>
+			<filename>help/ru-RU/screen.alphauserpoints.html</filename>
+			<filename>help/ru-RU/screen.how_create_plugin.html</filename>
+			<filename>help/ru-RU/css/index.html</filename>
+			<filename>help/ru-RU/css/help.css</filename>			
+			<filename>tables/index.html</filename>
+      <filename>tables/rules.php</filename>
+      <filename>tables/userspoints.php</filename>
+      <filename>tables/userspointsdetails.php</filename>
+      <filename>tables/userspointsrequests.php</filename>
+      <filename>tables/coupons.php</filename>
+      <filename>tables/raffle.php</filename>
+      <filename>tables/raffle_inscriptions.php</filename>
+      <filename>tables/levelrank.php</filename>
+      <filename>tables/medals.php</filename>
+			<filename>install/index.html</filename>
+			<filename>install/plugins/index.html</filename>			
+			<filename>install/plugins/alphauserpoints/alphauserpoints.php</filename>
+			<filename>install/plugins/alphauserpoints/alphauserpoints.xml</filename>
+      <filename>install/plugins/alphauserpoints/index.html</filename>       
+      <filename>install/plugins/sysplgaup_newregistered/sysplgaup_newregistered.xml</filename>
+      <filename>install/plugins/sysplgaup_newregistered/sysplgaup_newregistered.php</filename>
+      <filename>install/plugins/sysplgaup_newregistered/index.html</filename>       
+      <filename>install/plugins/sysplgaup_reader2author/sysplgaup_reader2author.xml</filename>
+      <filename>install/plugins/sysplgaup_reader2author/sysplgaup_reader2author.php</filename>
+      <filename>install/plugins/sysplgaup_reader2author/index.html</filename> 
+      <filename>install/plugins/sysplgaup_raffle/sysplgaup_raffle.xml</filename>
+      <filename>install/plugins/sysplgaup_raffle/sysplgaup_raffle.php</filename>
+      <filename>install/plugins/sysplgaup_raffle/index.html</filename>       
+      <filename>install/plugins/sysplgaup_content/sysplgaup_content.xml</filename>
+      <filename>install/plugins/sysplgaup_content/sysplgaup_content.php</filename>
+      <filename>install/plugins/sysplgaup_content/index.html</filename>       
+      <filename>install/mod_aupadmin/index.html</filename>  
+      <filename>install/mod_aupadmin/mod_aupadmin.xml</filename>
+      <filename>install/mod_aupadmin/mod_aupadmin.php</filename>      
+      <filename>install/plugins/plg_editors-xtd_raffle/raffle.xml</filename>
+      <filename>install/plugins/plg_editors-xtd_raffle/raffle.png</filename>
+      <filename>install/plugins/plg_editors-xtd_raffle/raffle.php</filename>
+      <filename>install/plugins/plg_editors-xtd_raffle/raffle.css</filename>
+      <filename>install/plugins/plg_editors-xtd_raffle/index.html</filename> 
+      <filename>install/plugins/plg_editors-xtd_raffle/language/index.html</filename>      
+      <filename>install/plugins/plg_editors-xtd_raffle/language/en-GB/en-GB.plg_editors-xtd_raffle.ini</filename> 
+      <filename>install/plugins/plg_editors-xtd_raffle/language/ru-RU/ru-RU.plg_editors-xtd_raffle.ini</filename> 
+      <filename>install/plugins/plg_editors-xtd_raffle/language/fr-FR/fr-FR.plg_editors-xtd_raffle.ini</filename>      
+		</files>
+		<languages folder="languages-admin">
+			<language tag="en-GB">en-GB/en-GB.com_alphauserpoints.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_alphauserpoints.menu.ini</language>
+			<language tag="">fr-FR/fr-FR.com_alphauserpoints.ini</language>
+			<language tag="">fr-FR/fr-FR.com_alphauserpoints.menu.ini</language>
+			<language tag="">it-IT/it-IT.com_alphauserpoints.ini</language>
+			<language tag="">it-IT/it-IT.com_alphauserpoints.menu.ini</language>
+			<language tag="">es-ES/es-ES.com_alphauserpoints.ini</language>
+			<language tag="">es-ES/es-ES.com_alphauserpoints.menu.ini</language>
+			<language tag="">fi-FI/fi-FI.com_alphauserpoints.ini</language>
+			<language tag="">fi-FI/fi-FI.com_alphauserpoints.menu.ini</language>
+      <language tag="">de-DE/de-DE.com_alphauserpoints.ini</language>
+      <language tag="">de-DE/de-DE.com_alphauserpoints.menu.ini</language>
+      <language tag="">nl-NL/nl-NL.com_alphauserpoints.ini</language>
+      <language tag="">nl-NL/nl-NL.com_alphauserpoints.menu.ini</language>
+      <language tag="">ru-RU/ru-RU.com_alphauserpoints.ini</language>
+      <language tag="">ru-RU/ru-RU.com_alphauserpoints.menu.ini</language>
+      <language tag="">ar-DZ/ar-DZ.com_alphauserpoints.ini</language>
+      <language tag="">ar-DZ/ar-DZ.com_alphauserpoints.menu.ini</language>
+		</languages>	
+	</administration>
+</install>

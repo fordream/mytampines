@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" >
+	<name>En Masse</name>
+	<author>Matamko.com</author>
+	<creationDate>July 2011</creationDate>
+	<copyright>(C) 2011</copyright>
+	<authorEmail>support@matamko.com</authorEmail>
+	<authorUrl>Matamko.com</authorUrl>
+	<version>1.6.0 (Stable)</version>
+
+	<license>Commercial GPL</license>
+	<description>Groupon clone for social crowd-buying websites</description>
+
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>enmasse.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		
+		<folder>controllers/</folder>
+		<folder>helpers/</folder>				
+		<folder>models/</folder>
+		<folder>upload/</folder>
+		<folder>language/</folder>
+		<folder>theme/</folder>
+		<folder>views/</folder>
+		
+	</files>
+
+	<installfile>install.enmasse.php</installfile>
+	<uninstallfile>uninstall.enmasse.php</uninstallfile>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.sql</file>
+			<file driver="mysql" charset="utf8">sql/insert.mysql.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+
+	<administration>
+
+		<files folder="admin">
+			<filename>controller.php</filename>
+			<filename>enmasse.php</filename>
+			<filename>checkUser.php</filename>
+			<filename>install.enmasse.php</filename>
+			<filename>toolbar.enmasse.html.php</filename>
+			<filename>uninstall.enmasse.php</filename>
+			
+			
+			<folder>controllers/</folder>
+			<folder>helpers/</folder>
+			<folder>script/</folder>
+			<folder>images/</folder>
+			<folder>language/</folder>
+			<folder>models/</folder>
+			<folder>tables/</folder>
+			<folder>views/</folder>
+		     <folder>sql/</folder>
+		</files>
+	</administration>
+
+</install>

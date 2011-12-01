@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>HYPERLOCALIZER Hub2</name>
+	<author>HYPERLOCALIZER</author>
+	<creationDate>15-01-2010</creationDate>
+	<copyright>Copyright: HYPERLOCALIZER</copyright>
+	<license>None</license>
+	<authorEmail>info@hyperlocalizer.com</authorEmail>
+	<authorUrl>www.hyperlocalizer.com</authorUrl>
+	<version>1.0.0</version>
+	<description>HYPERLOCALIZER Hub2</description>
+</install>

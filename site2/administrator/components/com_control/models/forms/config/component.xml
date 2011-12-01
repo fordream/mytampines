@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: component.xml 995 2008-10-03 01:57:47Z eddieajau $ -->
+<config>
+	<params>
+		<param
+			name="ext_mode"
+			type="list"
+			default="0"
+			label="JX Extension Mode"
+			description="JX Extension Mode Description">
+			<option value="0">JX Easy Mode</option>
+			<option value="1">JX Advanced Mode</option>
+		</param>
+	</params>
+</config>

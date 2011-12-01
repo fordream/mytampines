@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- candidatearticles_params.xml $Id: $ -->
+<form>
+    <fields>
+        <field name="params" type="hub2registry" default="" id="params" class="inputbox @lbl" label="ARTICLEPARAMS">
+        <param name="page_title" type="text" default="" label="COMMON_PAGE_TITLE" description="COMMON_DESC_PAGE_TITLE">
+        </param>
+        <param name="pageclass_sfx" type="text" default="" label="COMMON_PAGE_CLASS_SUFFIX" description="COMMON_DESC_PAGE_CLASS_SUFFIX">
+        </param>
+        <param name="@spacer1" type="spacer" default="" label="" description="" />
+        <param name="show_title" type="radio" default="" label="ARTICLE_PARAMS_LABEL_SHOW_TITLE" description="ARTICLE_PARAMS_DESC_SHOW_TITLE">
+            <option value="">Use Global</option>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        <param name="link_titles" type="radio" default="" label="COMMON_LINKED_TITLES" description="COMMON_DESC_LINKED_TITLES">
+            <option value="">Use Global</option>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        <param name="show_intro" type="radio" default="" label="COMMON_SHOW_INTRO" description="COMMON_DESC_SHOW_INTRO">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="@spacer2" type="spacer" default="" label="" description="" />
+        <param name="show_categories" type="radio" default="" label="COMMON_SHOW_CATEGORY" description="COMMON_DESC_SHOW_CATEGORY">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="link_categories" type="radio" default="" label="COMMON_SHOW_CATEGORY_LINK" description="COMMON_SHOW_CATEGORY_LINK">
+            <option value="">Use Global</option>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        <param name="show_tags" type="radio" default="" label="COMMON_SHOW_TAG" description="COMMON_DESC_SHOW_TAG">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="link_tags" type="radio" default="" label="COMMON_SHOW_TAG_LINK" description="COMMON_DESC_SHOW_TAG_LINK">
+            <option value="">Use Global</option>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        <param name="show_topics" type="radio" default="" label="COMMON_SHOW_TOPIC" description="COMMON_DESC_SHOW_TOPIC">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="link_topics" type="radio" default="" label="COMMON_SHOW_TOPIC_LINK" description="COMMON_DESC_SHOW_TOPIC_LINK">
+            <option value="">Use Global</option>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        <param name="show_neighbourhoods" type="radio" default="" label="COMMON_SHOW_NEIGHBOURHOOD" description="COMMON_DESC_SHOW_NEIGHBOURHOOD">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="link_neighbourhoods" type="radio" default="" label="COMMON_SHOW_NEIGHBOURHOOD_LINK" description="COMMON_DESC_SHOW_NEIGHBOURHOOD_LINK">
+            <option value="">Use Global</option>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+
+        <param name="@spacer3" type="spacer" default="" label="" description="" />
+        <param name="show_author" type="radio" default="" label="COMMON_SHOW_AUTHOR" description="COMMON_DESC_SHOW_AUTHOR">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="show_create_date" type="radio" default="" label="COMMON_SHOW_CREATE_DATE" description="COMMON_DESC_SHOW_CREATE_DATE">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="show_modify_date" type="radio" default="" label="COMMON_SHOW_MODIFIED_DATE" description="COMMON_DESC_SHOW_MODIFIED_DATE">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="show_article_date" type="radio" default="" label="COMMON_SHOW_ARTICLE_DATE" description="COMMON_DESC_SHOW_ARTICLE_DATE">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="show_map" type="radio" default="" label="COMMON_MAP" description="COMMON_DESC_MAP">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="map_height" type="text" default="" label="COMMON_MAP_HEIGHT" description="COMMON_DESC_MAP_HEIGHT">
+        </param>
+        <param name="map_width" type="text" default="" label="COMMON_MAP_WIDTH" description="COMMON_DESC_MAP_WIDTH">
+        </param>
+        <param name="@spacer4" type="spacer" default="" label="" description="" />
+        <param name="show_icons" type="radio" default="" label="COMMON_SHOW_ICON" description="COMMON_DESC_SHOW_ICON">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="show_pdf_icon" type="radio" default="" label="COMMON_SHOW_PDF_ICON" description="COMMON_DESC_SHOW_PDF_ICON">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="show_print_icon" type="radio" default="" label="COMMON_SHOW_PRINT_ICON" description="COMMON_DESC_SHOW_PRINT_ICON">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="show_email_icon" type="radio" default="" label="COMMON_SHOW_EMAIL_ICON" description="COMMON_DESC_SHOW_EMAIL_ICON">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="@spacer5" type="spacer" default="" label="" description="" />
+        <param name="show_hits" type="radio" default="" label="COMMON_SHOW_HITS" description="COMMON_DESC_SHOW_HITS">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="show_readmore" type="radio" default="" label="COMMON_SHOW_READMORE" description="COMMON_DESC_SHOW_READMORE">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="show_vote" type="radio" default="" label="COMMON_SHOW_VOTE" description="COMMON_DESC_SHOW_VOTE">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="show_local_votes" type="radio" default="" label="COMMON_SHOW_LOCAL_VOTE" description="COMMON_DESC_SHOW_LOCAL_VOTE">
+            <option value="">Use Global</option>
+            <option value="0">Disable</option>
+            <option value="1">Enable</option>
+        </param>
+        <param name="show_moodvote" type="radio" default="" label="COMMON_SHOW_MOOD_VOTE" description="COMMON_DESC_SHOW_MOOD_VOTE">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="@spacer6" type="spacer" default="" label="" description="" />
+        <param name="enable_comments" type="radio" default="" label="COMMON_ENABLE_COMMENTS" description="COMMON_DESC_ENABLE_COMMENTS">
+            <option value="">Use Global</option>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        <param name="show_comment_count" type="radio" default="" label="COMMON_SHOW_COMMENT_COUNT" description="COMMON_DESC_SHOW_COMMENT_COUNT">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="guestcomments" type="radio" default="" label="COMMON_GUEST_COMMENTS" description="COMMON_DESC_GUEST_COMMENTS">
+            <option value="">Use Global</option>
+            <option value="0">Disable</option>
+            <option value="1">Allow</option>
+        </param>
+        <param name="enable_subject" type="radio" default="" label="COMMON_ENABLE_SUBJECT" description="COMMON_DESC_ENABLE_SUBJECT">
+            <option value="">Use Global</option>
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="@spacer7" type="spacer" default="" label="" description="" />
+        <param name="enable_sharing" type="radio" default="" label="COMMON_ENABLE_SHARING" description="COMMON_DESC_ENABLE_SHARING">
+            <option value="">Use Global</option>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        <param name="@spacer8" type="spacer" default="" label="" description="" />
+        <param name="published_on_facebok" type="radio" default="" label="PUBLIHED_ON_FACEBOOK" description="COMMON_DESC_ENABLE_SHARING">
+            <option value="">Use Global</option>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        <param name="published_on_twiter" type="radio" default="" label="PUBLISHED_ON_TWITER" description="COMMON_DESC_ENABLE_SHARING">
+            <option value="">Use Global</option>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        </field>
+    </fields>
+</form>

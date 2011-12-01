@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- siteparams.xml $Id: $ -->
+<form>
+	<fields>
+		<field name="name" type="text" id="name" class="inputbox validate required custom-validate-length_0-255 @lbl"
+			label="ADMIN_SITEPARAMS_XML_NAME"
+			size="52"
+			default=""
+			description="ADMIN_SITEPARAMS_XML_DESC_NAME"
+			required="true"
+		/>
+        <field name="description" type="textarea" id="description" class="inputbox @lbl"
+            label="ADMIN_SITEPARAMS_XML_DESC"
+            rows="5" cols="50"
+            default=""
+            description="ADMIN_SITEPARAMS_XML_DESC_DESC"
+        />
+        <field name="template_id" type="list_sitetemplatelist" id="template_id" class="inputbox validate paramtype @lbl"
+            label="ADMIN_SITEPARAMS_XML_TEMPLATE"
+            size="52"
+            default=""
+            description="ADMIN_SITEPARAMS_XML_DESC_TEMPLATE"
+        />
+        <field name="paramtype" type="list" id="paramtype" class="inputbox required @lbl paramtype"
+            label="ADMIN_SITEPARAMS_XML_PARAMTYPE"
+            default="1" description="ADMIN_SITEPARAMS_XML_DESC_PARAMTYPE">
+                <option value="1">text</option>
+        </field>
+	</fields>
+</form>

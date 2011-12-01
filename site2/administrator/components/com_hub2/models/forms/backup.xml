@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- backup.xml $Id: $ -->
+<form>
+	<fields>
+		<field name="metadata" type="radio" id="metadata" class="inputbox @lbl"
+			label="Include Metadata" description="Include metadata tables in backup"
+			default="0" required="true">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+        <field name="media" type="radio" id="media" class="inputbox @lbl"
+            label="Include Media" description="Include media tables in backup"
+            default="0" required="true">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </field>
+        <field name="sites" type="radio" id="sites" class="inputbox @lbl"
+            label="Include Sites and groups" description="Include site tables in backup"
+            default="0" required="true">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </field>
+        <field name="user" type="radio" id="user" class="inputbox @lbl"
+            label="Include User" description="Include user tables in backup"
+            default="0" required="true">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </field>
+        <field name="content" type="radio" id="content" class="inputbox @lbl"
+            label="Include Content" description="Include content tables in backup"
+            default="0" required="true">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </field>
+	</fields>
+</form>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: manifest.xml 1179 2009-06-04 04:15:56Z eddieajau $ -->
+<install type="component" version="1.5.7" method="upgrade">
+    <name>Control</name>
+    <version>1.0.7</version>
+    <creationDate>4 June 2009</creationDate>
+    <author>JXtended</author>
+    <authorEmail>info@jxtended.com</authorEmail>
+    <authorUrl>http://www.jxtended.com</authorUrl>
+    <copyright>2005 - 2009 JXtended LLC. All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+    <description>Extended Access Control component</description>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install/installsql.mysql.utf8.php</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">install/uninstallsql.mysql.utf8.php</file>
+		</sql>
+	</uninstall>
+
+	<files folder="site" />
+
+	<administration>
+        <menu img="components/com_control/media/images/icon-16-jx.png" link="option=com_control">Control</menu>
+
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB/en-GB.com_control.ini</language>
+		</languages>
+
+		<files folder="admin">
+			<file>control.php</file>
+			<file>controller.php</file>
+			<file>index.html</file>
+			<file>version.php</file>
+
+			<folder>controllers</folder>
+			<folder>help</folder>
+			<folder>helpers</folder>
+			<folder>install</folder>
+			<folder>media</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+	</administration>
+</install>

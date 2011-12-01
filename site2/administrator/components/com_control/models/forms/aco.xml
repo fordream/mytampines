@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: aco.xml 1127 2008-11-27 21:53:07Z eddieajau $ -->
+<form>
+	<fields>
+		<field
+			name="id"
+			type="text"
+			id="id"
+			class="readonly"
+			label="Id"
+			size="10"
+			default="0"
+			required="true"
+			readonly="true" />
+		<field
+			name="section_value"
+			type="list_sections"
+			id="section_value"
+			class="inputbox"
+			label="Section Value"
+			size="30"
+			default="" />
+		<field
+			name="name"
+			type="text"
+			id="name"
+			class="inputbox"
+			label="Name"
+			size="30"
+			default=""
+			description="A free text name for this item" />
+		<field
+			name="value"
+			type="text"
+			id="value"
+			class="inputbox"
+			label="Value"
+			size="30"
+			default=""
+			description="The programmatic value use to refer to this item" />
+		<field
+			name="order_value"
+			type="text"
+			id="order_value"
+			class="inputbox"
+			label="Ordering"
+			size="6"
+			default="0" />
+		<field
+			name="hidden"
+			type="radio"
+			id="hidden"
+			class="inputbox"
+			label="Hidden"
+			size="6"
+			default="0">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field
+			name="acl_type"
+			type="radio"
+			id="hidden"
+			class="inputbox"
+			label="Permission Type"
+			default="0"
+			description="Rules are 2-dimensional, Roles are 3-dimensional">
+			<option value="0">Rule</option>
+			<option value="1">Role</option>
+		</field>
+		<field
+			name="note"
+			type="textarea"
+			id="note"
+			class="inputbox"
+			label="Note"
+			rows="3"
+			cols="50"
+			default="" />
+	</fields>
+</form>

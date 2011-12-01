@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- region.xml $Id: $ -->
+<form>
+	<fields>
+		<field name="name" type="text" id="name" class="inputbox validate required custom-validate-length_0-255 @lbl"
+			label="ADMIN_REGION_XML_NAME"
+			size="52"
+			default=""
+			description="ADMIN_REGION_XML_DESC_Name"
+			required="true"
+		/>
+		<field name="parent_id" type="list_regionlist"  id="parent_id" class="inputbox validate @lbl"
+			label="ADMIN_REGION_XML_PARENT"
+			size="1"
+			default=""
+			description="ADMIN_REGION_XML_DESC_PARENT"
+		/>
+	</fields>
+</form>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: group.xml 995 2008-10-03 01:57:47Z eddieajau $ -->
+<form>
+	<fields>
+		<field
+			name="id"
+			type="hidden"
+			id="id"
+			class="readonly"
+			label="Id"
+			size="10"
+			default="0"
+			required="true"
+			readonly="true" />
+		<field
+			name="parent_id"
+			type="list_groups"
+			id="parent_id"
+			class="inputbox"
+			label="JX Parent Group"
+			parent_id="28"
+			size="30"
+			default="1" />
+		<field
+			name="name"
+			type="text"
+			id="name"
+			class="inputbox"
+			label="JX Group Name"
+			size="30"
+			default=""
+			description="JX Group Name Desc" />
+		<field
+			name="value"
+			type="text"
+			id="value"
+			class="inputbox"
+			label="JX Group Value"
+			size="30"
+			default=""
+			description="JX Group Value Desc" />
+	</fields>
+</form>
